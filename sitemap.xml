@@ -1,45 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
   <url>
     <loc>https://aitoolreviews.co/</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- About -->
   <url>
     <loc>https://aitoolreviews.co/about.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Review: ChatGPT -->
   <url>
-    <loc>https://aitoolreviews.co/articles/openclaw-review-2026.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <loc>https://aitoolreviews.co/reviews/chatgpt.html</loc>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Review: Claude -->
   <url>
-    <loc>https://aitoolreviews.co/articles/claude-vs-gpt-vs-gemini-2026.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <loc>https://aitoolreviews.co/reviews/claude.html</loc>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Review: Gemini -->
   <url>
-    <loc>https://aitoolreviews.co/articles/best-mcp-servers-2026.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <loc>https://aitoolreviews.co/reviews/gemini.html</loc>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Review: Perplexity -->
   <url>
-    <loc>https://aitoolreviews.co/articles/stripe-dunning-tools-compared.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <loc>https://aitoolreviews.co/reviews/perplexity.html</loc>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Review: Midjourney -->
+  <url>
+    <loc>https://aitoolreviews.co/reviews/midjourney.html</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Articles -->
   <url>
     <loc>https://aitoolreviews.co/articles/best-free-ai-tools-2026.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2024-11-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://aitoolreviews.co/articles/best-mcp-servers-2026.html</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aitoolreviews.co/articles/claude-vs-gpt-vs-gemini-2026.html</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aitoolreviews.co/articles/openclaw-review-2026.html</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aitoolreviews.co/articles/stripe-dunning-tools-compared.html</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

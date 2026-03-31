@@ -1,0 +1,47 @@
+# Cloudflare Pages — Security Headers
+# https://aitoolreviews.co
+# Reference: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  # Prevent MIME sniffing
+  X-Content-Type-Options: nosniff
+
+  # Clickjacking protection
+  X-Frame-Options: DENY
+
+  # XSS protection (legacy browsers)
+  X-XSS-Protection: 1; mode=block
+
+  # Referrer policy — send referrer to same origin, only origin to external
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Permissions policy — restrict access to sensitive browser APIs
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), interest-cohort=()
+
+  # Content Security Policy
+  # Allows: same-origin scripts/styles, Google Fonts, inline styles (for hero gradients)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+  # HSTS — enforce HTTPS for 1 year, include subdomains
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Cache static assets
+  Cache-Control: public, max-age=3600
+
+# Long cache for CSS/JS (versioned via filename if needed)
+/css/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Robots and sitemap — short cache
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+# HTML pages — moderate cache, always revalidate
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
