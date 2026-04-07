@@ -1,7 +1,7 @@
 # aitoolreviews.co — Build Status
 
-**Date:** 2026-04-01  
-**Built by:** Jarrod (direct exec, no subagent)
+**Date:** 2026-04-07  
+**Built by:** Jarrod (cron job execution)
 
 ## What's Built
 
@@ -10,19 +10,21 @@
 - `/netlify.toml` — Deploy config for Cloudflare Pages / Netlify
 - `/generate-articles.py` — Script that generates all articles (run to add more)
 - `/articles/index.html` — All reviews listing page
-- `/articles/` — 12 complete articles:
+- `/articles/` — 13 complete articles:
   1. jasper-ai-review-2026.html
-  2. writesonic-vs-jasper-2026.html
-  3. surfer-seo-review-2026.html
-  4. best-ai-writing-tools-2026.html
-  5. best-free-ai-writing-tools-2026.html
-  6. best-ai-seo-tools-2026.html
-  7. best-ai-automation-tools-2026.html
-  8. best-ai-chatbots-2026.html
-  9. notion-ai-review-2026.html
-  10. best-ai-tools-for-small-business-2026.html
-  11. best-ai-image-generators-2026.html
-  12. best-ai-video-tools-2026.html
+  2. writesonic-review-2026.html (NEW)
+  3. copy-ai-review-2026.html
+  4. writesonic-vs-jasper-2026.html
+  5. surfer-seo-review-2026.html
+  6. best-ai-writing-tools-2026.html
+  7. best-free-ai-writing-tools-2026.html
+  8. best-ai-seo-tools-2026.html
+  9. best-ai-automation-tools-2026.html
+  10. best-ai-chatbots-2026.html
+  11. notion-ai-review-2026.html
+  12. best-ai-tools-for-small-business-2026.html
+  13. best-ai-image-generators-2026.html
+  14. best-ai-video-tools-2026.html
 
 ## Deploy to Cloudflare Pages (Free)
 
