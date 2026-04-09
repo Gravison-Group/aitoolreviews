@@ -10,23 +10,24 @@
 - `/netlify.toml` — Deploy config for Cloudflare Pages / Netlify
 - `/generate-articles.py` — Script that generates all articles (run to add more)
 - `/articles/index.html` — All reviews listing page
-- `/articles/` — 14 complete articles:
+- `/articles/` — 17 complete articles:
   1. jasper-ai-review-2026.html
   2. writesonic-review-2026.html
   3. copy-ai-review-2026.html
   4. rytr-review-2026.html
-  5. anyword-review-2026.html (NEW)
-  6. writesonic-vs-jasper-2026.html
-  7. surfer-seo-review-2026.html
-  8. best-ai-writing-tools-2026.html
-  9. best-free-ai-writing-tools-2026.html
-  10. best-ai-seo-tools-2026.html
-  11. best-ai-automation-tools-2026.html
-  12. best-ai-chatbots-2026.html
-  13. notion-ai-review-2026.html
-  14. best-ai-tools-for-small-business-2026.html
-  15. best-ai-image-generators-2026.html
-  16. best-ai-video-tools-2026.html
+  5. anyword-review-2026.html
+  6. frase-review-2026.html (NEW)
+  7. writesonic-vs-jasper-2026.html
+  8. surfer-seo-review-2026.html
+  9. best-ai-writing-tools-2026.html
+  10. best-free-ai-writing-tools-2026.html
+  11. best-ai-seo-tools-2026.html
+  12. best-ai-automation-tools-2026.html
+  13. best-ai-chatbots-2026.html
+  14. notion-ai-review-2026.html
+  15. best-ai-tools-for-small-business-2026.html
+  16. best-ai-image-generators-2026.html
+  17. best-ai-video-tools-2026.html
 
 ## Deploy to Cloudflare Pages (Free)
 
@@ -55,10 +56,11 @@
 | 2 | Copy.ai | 45% first month | copy.ai/affiliates |
 | 3 | Writesonic | 30% recurring | writesonic.com/affiliates |
 | 4 | Jasper | 25% recurring | jasper.ai/affiliates |
-| 5 | Surfer SEO | 25% recurring | surferseo.com/affiliate |
-| 6 | Make.com | 20% recurring | make.com/en/affiliate |
-| 7 | Canva | up to $36/sub | canva.com/affiliates |
-| 8 | Descript | $30/referral | descript.com/affiliates |
+| 5 | Frase | 30% recurring | frase.io/affiliates |
+| 6 | Surfer SEO | 25% recurring | surferseo.com/affiliate |
+| 7 | Make.com | 20% recurring | make.com/en/affiliate |
+| 8 | Canva | up to $36/sub | canva.com/affiliates |
+| 9 | Descript | $30/referral | descript.com/affiliates |
 
 **After signing up:** Replace `?fpr=gravison` links in all articles with your real affiliate IDs. Run `grep -r "fpr=gravison" articles/` to find them all.
 
