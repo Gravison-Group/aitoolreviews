@@ -87,6 +87,7 @@ def make_article(slug, title, meta_desc, category, badge, rating, summary, body_
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aitoolreviews.co/articles/{slug}.html">
 <link rel="canonical" href="https://aitoolreviews.co/articles/{slug}.html">
+<meta name='impact-site-verification' value='083f318d-45c4-4a07-a7da-f589cda5b865'>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">{{
   "@context": "https://schema.org",
