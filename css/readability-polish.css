@@ -1,0 +1,304 @@
+/* 
+ * READABILITY POLISH LAYER - Minimal 80/20 improvements
+ * Applied to AIToolReviews.co and ForAIThings.com
+ * Goal: Clean, modern, professional article presentation
+ * Without redesigning or slowing momentum
+ */
+
+/* ===== ARTICLE CONTENT CONTAINER ===== */
+.article-content {
+  /* Centered container with optimal reading width */
+  max-width: 720px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  
+  /* Improved typography */
+  line-height: 1.7 !important;
+  font-size: 1.05rem !important;
+  color: var(--text) !important;
+}
+
+/* ===== IMPROVED HEADING HIERARCHY ===== */
+.article-content h1 {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 1.5rem 0 !important;
+  color: var(--text) !important;
+  letter-spacing: -0.02em !important;
+}
+
+.article-content h2 {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin: 2.5rem 0 1rem 0 !important;
+  color: var(--text) !important;
+  padding-top: 0.5rem !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+.article-content h2:first-of-type {
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+
+.article-content h3 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin: 2rem 0 0.75rem 0 !important;
+  color: var(--text) !important;
+}
+
+.article-content h4 {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin: 1.5rem 0 0.5rem 0 !important;
+  color: var(--text) !important;
+}
+
+/* ===== IMPROVED PARAGRAPH SPACING ===== */
+.article-content p {
+  margin-bottom: 1.5rem !important;
+  line-height: 1.7 !important;
+  color: var(--text) !important;
+}
+
+/* ===== IMPROVED LIST SPACING ===== */
+.article-content ul,
+.article-content ol {
+  margin: 0 0 1.5rem 1.5rem !important;
+  padding-left: 1rem !important;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
+  color: var(--text) !important;
+}
+
+.article-content li p {
+  margin-bottom: 0.5rem !important;
+}
+
+/* ===== IMPROVED TABLE READABILITY ===== */
+.article-content table {
+  margin: 2rem 0 !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+  font-size: 0.95rem !important;
+}
+
+.article-content th {
+  background: var(--bg-alt) !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+.article-content td {
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+.article-content tr:hover td {
+  background: var(--bg-alt) !important;
+}
+
+/* ===== IMPROVED BLOCKQUOTES ===== */
+.article-content blockquote {
+  margin: 2rem 0 !important;
+  padding: 1.5rem !important;
+  background: var(--bg-alt) !important;
+  border-left: 4px solid var(--primary) !important;
+  font-style: italic !important;
+  line-height: 1.6 !important;
+  color: var(--text) !important;
+}
+
+.article-content blockquote p {
+  margin-bottom: 0 !important;
+}
+
+/* ===== IMPROVED CODE BLOCKS ===== */
+.article-content pre,
+.article-content code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+}
+
+.article-content pre {
+  margin: 1.5rem 0 !important;
+  padding: 1.5rem !important;
+  background: var(--bg-alt) !important;
+  border-radius: 6px !important;
+  overflow-x: auto !important;
+  color: var(--text) !important;
+}
+
+.article-content code:not(pre code) {
+  padding: 0.2rem 0.4rem !important;
+  background: var(--bg-alt) !important;
+  border-radius: 4px !important;
+  font-size: 0.9rem !important;
+  color: var(--text) !important;
+}
+
+/* ===== IMPROVED IMAGES ===== */
+.article-content img {
+  margin: 2rem auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+}
+
+.article-content figure {
+  margin: 2rem 0 !important;
+  text-align: center !important;
+}
+
+.article-content figcaption {
+  margin-top: 0.5rem !important;
+  font-size: 0.9rem !important;
+  color: var(--muted) !important;
+  font-style: italic !important;
+}
+
+/* ===== IMPROVED SECTION SPACING ===== */
+.article-content > * + * {
+  margin-top: 0 !important;
+}
+
+.article-content > * + h2,
+.article-content > * + h3,
+.article-content > * + h4 {
+  margin-top: 2.5rem !important;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .article-content {
+    padding: 0 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+  
+  .article-content h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  
+  .article-content h2 {
+    font-size: 1.4rem !important;
+    line-height: 1.3 !important;
+    margin: 2rem 0 0.75rem 0 !important;
+  }
+  
+  .article-content h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.35 !important;
+    margin: 1.5rem 0 0.5rem 0 !important;
+  }
+  
+  .article-content p {
+    margin-bottom: 1.25rem !important;
+    line-height: 1.65 !important;
+  }
+  
+  .article-content ul,
+  .article-content ol {
+    margin: 0 0 1.25rem 1.25rem !important;
+  }
+  
+  .article-content table {
+    font-size: 0.9rem !important;
+  }
+  
+  .article-content th,
+  .article-content td {
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+/* ===== DARK MODE ADJUSTMENTS ===== */
+@media (prefers-color-scheme: dark) {
+  .article-content {
+    color: #e2e8f0 !important;
+  }
+  
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4 {
+    color: #ffffff !important;
+  }
+  
+  .article-content p,
+  .article-content li {
+    color: #cbd5e1 !important;
+  }
+  
+  .article-content th {
+    background: #1e293b !important;
+    color: #ffffff !important;
+  }
+  
+  .article-content td {
+    color: #cbd5e1 !important;
+  }
+  
+  .article-content tr:hover td {
+    background: #1e293b !important;
+  }
+  
+  .article-content blockquote {
+    background: #1e293b !important;
+    color: #cbd5e1 !important;
+  }
+  
+  .article-content pre,
+  .article-content code:not(pre code) {
+    background: #1e293b !important;
+    color: #cbd5e1 !important;
+  }
+}
+
+/* ===== PRINT OPTIMIZATION ===== */
+@media print {
+  .article-content {
+    max-width: 100% !important;
+    padding: 0 !important;
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+  }
+  
+  .article-content h1 {
+    font-size: 18pt !important;
+  }
+  
+  .article-content h2 {
+    font-size: 16pt !important;
+  }
+  
+  .article-content h3 {
+    font-size: 14pt !important;
+  }
+  
+  .article-content a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+  
+  .article-content a[href^="http"]::after {
+    content: " (" attr(href) ")" !important;
+    font-size: 10pt !important;
+    color: #666 !important;
+  }
+}

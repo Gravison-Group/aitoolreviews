@@ -1,0 +1,364 @@
+/* Light Presentation Refinement - Consistency improvements only */
+/* Do NOT redesign - only fix minor visual inconsistencies */
+
+/* ===== IMPROVED SPACING CONSISTENCY ===== */
+
+/* More consistent vertical rhythm */
+.article-body > * {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.article-body > * + h2 {
+  margin-top: 2.5rem;
+}
+
+.article-body > * + h3 {
+  margin-top: 2rem;
+}
+
+.article-body > * + h4 {
+  margin-top: 1.5rem;
+}
+
+/* Consistent paragraph spacing */
+.article-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+/* Consistent list spacing */
+.article-body ul,
+.article-body ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.article-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== IMPROVED TABLE STYLING ===== */
+
+.article-body table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-body th {
+  background: var(--accent-pale);
+  color: var(--heading);
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-bottom: 2px solid var(--accent);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.article-body td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+
+.article-body tr:last-child td {
+  border-bottom: none;
+}
+
+.article-body tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Zebra striping for better readability */
+.article-body tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.article-body tbody tr:nth-child(even):hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* ===== IMPROVED COMPARISON SECTIONS ===== */
+
+/* Comparison blocks */
+.comparison-block {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.comparison-block h3 {
+  margin-top: 0;
+  color: var(--heading);
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Pros/Cons grids */
+.pros-cons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.pros-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.cons-box {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.pros-box h4,
+.cons-box h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pros-box h4 {
+  color: #15803d;
+}
+
+.pros-box h4:before {
+  content: "✓";
+  font-weight: bold;
+}
+
+.cons-box h4 {
+  color: #c2410c;
+}
+
+.cons-box h4:before {
+  content: "✗";
+  font-weight: bold;
+}
+
+/* Feature comparison tables */
+.feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.feature-table th {
+  background: var(--accent-pale);
+  color: var(--heading);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.feature-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.feature-table .feature-check {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.feature-table .feature-missing {
+  color: #c2410c;
+  opacity: 0.7;
+}
+
+/* ===== IMPROVED CALLTOUTS & HIGHLIGHTS ===== */
+
+.callout {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.callout h4 {
+  margin-top: 0;
+  color: var(--heading);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callout h4:before {
+  content: "💡";
+}
+
+.callout--warning {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #fcd34d;
+  border-left-color: #f59e0b;
+}
+
+.callout--warning h4:before {
+  content: "⚠️";
+}
+
+.callout--success {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-color: #a7f3d0;
+  border-left-color: #10b981;
+}
+
+.callout--success h4:before {
+  content: "✅";
+}
+
+/* ===== IMPROVED TOOL/BENEFIT BLOCKS ===== */
+
+.tool-benefit {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.tool-benefit-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tool-benefit-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--heading);
+}
+
+.tool-benefit-content p {
+  margin-bottom: 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* ===== IMPROVED MOBILE CONSISTENCY ===== */
+
+@media (max-width: 768px) {
+  /* Better mobile spacing */
+  .article-body {
+    padding: 1.5rem 1rem;
+  }
+  
+  .article-body h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .article-body h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Better table readability on mobile */
+  .article-body table {
+    font-size: 0.9rem;
+  }
+  
+  .article-body th,
+  .article-body td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  /* Stack comparison grids on mobile */
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Adjust tool benefit blocks */
+  .tool-benefit {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .tool-benefit-icon {
+    margin: 0 auto;
+  }
+}
+
+/* ===== IMPROVED LINK STYLING ===== */
+
+.article-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  padding: 0.1rem 0.2rem;
+  border-radius: 2px;
+}
+
+.article-body a:hover {
+  color: var(--accent-hov);
+  border-bottom-color: var(--accent);
+  background: rgba(45, 106, 79, 0.05);
+}
+
+/* Internal link styling */
+.article-body a[href^="/articles/"] {
+  font-weight: 600;
+}
+
+/* External link indicator */
+.article-body a[href^="http"]:not([href*="aitoolreviews.co"]):after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}

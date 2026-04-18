@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <style>
+    .logo-text {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      fill: #2563eb;
+    }
+    .logo-subtext {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #6b7280;
+    }
+  </style>
+  <rect width="200" height="60" fill="#f8fafc" rx="8"/>
+  <text x="100" y="30" text-anchor="middle" class="logo-text" font-size="24">AI Tool Reviews</text>
+  <text x="100" y="45" text-anchor="middle" class="logo-subtext">Expert Testing & Comparison</text>
+</svg>

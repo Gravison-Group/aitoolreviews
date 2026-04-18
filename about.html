@@ -36,220 +36,109 @@
   }
   </script>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a href="/" class="nav__logo"><div class="nav__logo-icon" aria-hidden="true">🤖</div><span>AI Tool Reviews</span></a>
-      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="currentColor"/><rect y="10" width="22" height="2" rx="1" fill="currentColor"/><rect y="16" width="22" height="2" rx="1" fill="currentColor"/></svg></button>
-      <div class="nav__links">
-        <a href="/">Home</a>
-        <a href="reviews/chatgpt.html">ChatGPT</a>
-        <a href="reviews/claude.html">Claude</a>
-        <a href="reviews/gemini.html">Gemini</a>
-        <a href="reviews/perplexity.html">Perplexity</a>
-        <a href="reviews/midjourney.html">Midjourney</a>
-        <a href="about.html" class="active">About</a>
+<nav>
+  <div class="container nav-inner">
+    <a class="nav-logo" href="/">🤖 AIToolReviews.co</a>
+    <ul class="nav-links">
+      <li><a href="/articles/">Reviews</a></li>
+      <li><a href="/#categories">Categories</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>About AIToolReviews.co</h1>
+    <p>Independent, hands-on AI tool reviews since 2026.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <h2>Our Mission</h2>
+    <p>AI Tool Reviews exists because most AI tool coverage is either too shallow, too promotional, or simply outdated. We fix that.</p>
+    <p>The AI tools landscape moves fast. New models drop every few weeks. Marketing claims get louder. Benchmarks get gamed. It's hard to know what's actually useful.</p>
+    <p>We test every tool we review with real-world tasks. We pay for our own subscriptions. We re-test when major updates ship. We tell you when something used to be good and isn't anymore.</p>
+    <p>Our goal: when you read a review here, you should feel confident you're getting an honest assessment that reflects how a tool actually performs for real people doing real work.</p>
+
+    <h2 id="methodology">How We Test &amp; Score AI Tools</h2>
+    <p>Every review follows the same structured process:</p>
+    <ul>
+      <li><strong>Hands-On Testing:</strong> We use every tool for real tasks over a minimum of one week. No shortcuts. We test writing, coding, reasoning, research, and any tool-specific capabilities.</li>
+      <li><strong>Standardized Benchmarks:</strong> We run every tool through the same set of benchmark prompts covering creative writing, factual accuracy, reasoning puzzles, code generation, and document summarization.</li>
+      <li><strong>Scoring Rubric:</strong> Each category is scored 1–5 on consistent criteria. Overall scores are weighted averages, not gut feelings. We show our sub-scores so you can decide what matters most for your use case.</li>
+      <li><strong>Pricing Verification:</strong> We check pricing directly from each company's pricing page at time of publication. AI pricing changes often — we include the last-updated date on every review.</li>
+      <li><strong>Peer Review:</strong> Each review is checked against community consensus, independent benchmarks (MMLU, HumanEval, etc.), and public user feedback to ensure we're not outliers.</li>
+      <li><strong>Ongoing Updates:</strong> We re-test whenever a major update ships. AI models improve fast — a review from 6 months ago can be dangerously outdated. Every review shows its last-updated date.</li>
+    </ul>
+
+    <h2>What Our Scores Mean</h2>
+    <ul>
+      <li><strong>5.0 — Exceptional:</strong> Best in class. Sets the standard for its category. Minor flaws don't detract from an otherwise outstanding tool.</li>
+      <li><strong>4.0–4.9 — Excellent:</strong> Strong recommendation. Delivers real value, performs reliably, with only minor limitations.</li>
+      <li><strong>3.0–3.9 — Good:</strong> Solid tool with meaningful limitations. Worth considering for specific use cases.</li>
+      <li><strong>2.0–2.9 — Below Average:</strong> Significant problems. Only recommended if you have a very specific, niche use case.</li>
+    </ul>
+    <p>We score five dimensions for most AI assistants: <strong>Writing Quality, Coding, Reasoning, Value for Money,</strong> and <strong>Ease of Use</strong>. For specialized tools like image generators, we adapt the dimensions to fit the tool's purpose.</p>
+
+    <h2 id="disclosure">Affiliate &amp; Commercial Relationships</h2>
+    <p><strong>Key principle:</strong> Affiliate relationships never influence our scores, conclusions, or recommendations. We will recommend a tool with no affiliate program over a tool with one if the non-affiliate tool is better. Our editorial integrity is non-negotiable.</p>
+    <p>Some links on this site are affiliate links. This means if you click a link and purchase a subscription, we may receive a commission at no additional cost to you. Affiliate links are how we sustain this publication — covering subscription costs, testing time, and hosting.</p>
+    <p>What we commit to:</p>
+    <ul>
+      <li>We disclose all affiliate relationships on relevant pages</li>
+      <li>Scores are assigned before we consider monetization</li>
+      <li>We test tools ourselves; we don't rely on vendor-provided demos</li>
+      <li>We never accept payment for coverage or positive reviews</li>
+      <li>We update reviews when our honest assessment changes</li>
+    </ul>
+    <p>If you believe a review is inaccurate or outdated, you're welcome to reach out. We take feedback seriously and update reviews when warranted.</p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">🤖 AIToolReviews.co</div>
+        <p>Independent reviews of AI tools. We test so you don't have to.</p>
+        <p style="margin-top:10px;font-size:0.8rem;">Some links on this site are affiliate links. We may earn a commission at no extra cost to you.</p>
       </div>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-label">About Us</div>
-        <h1>Honest Reviews.<br>No Compromises.</h1>
-        <p>AI Tool Reviews exists because most AI tool coverage is either too shallow, too promotional, or simply outdated. We fix that.</p>
-      </div>
-    </section>
-
-    <!-- MISSION -->
-    <section class="section">
-      <div class="container container--narrow">
-        <div class="about-grid">
-          <div>
-            <div class="section-label">Our Mission</div>
-            <h2>Help People Choose the Right AI Tool</h2>
-            <p>The AI tools landscape moves fast. New models drop every few weeks. Marketing claims get louder. Benchmarks get gamed. It's hard to know what's actually useful.</p>
-            <p>We test every tool we review with real-world tasks. We pay for our own subscriptions. We re-test when major updates ship. We tell you when something used to be good and isn't anymore.</p>
-            <p>Our goal: when you read a review here, you should feel confident you're getting an honest assessment that reflects how a tool actually performs for real people doing real work.</p>
-          </div>
-          <div>
-            <div class="card" style="background:var(--bg-secondary);">
-              <div style="font-size:2rem;margin-bottom:1rem;">🤖</div>
-              <h3 style="margin-bottom:0.75rem;">AI Tool Reviews</h3>
-              <p style="margin-bottom:1rem;">Independent AI tool journalism. No vendor relationships. No sponsored rankings.</p>
-              <div style="display:flex;flex-direction:column;gap:0.5rem;font-size:0.875rem;">
-                <div style="display:flex;align-items:center;gap:0.5rem;"><span style="color:var(--success);">✓</span> <span style="color:var(--text-secondary)">5+ tools reviewed and updated</span></div>
-                <div style="display:flex;align-items:center;gap:0.5rem;"><span style="color:var(--success);">✓</span> <span style="color:var(--text-secondary)">100+ hours of hands-on testing</span></div>
-                <div style="display:flex;align-items:center;gap:0.5rem;"><span style="color:var(--success);">✓</span> <span style="color:var(--text-secondary)">Standardized scoring across all tools</span></div>
-                <div style="display:flex;align-items:center;gap:0.5rem;"><span style="color:var(--success);">✓</span> <span style="color:var(--text-secondary)">Reviews updated for every major release</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- METHODOLOGY -->
-    <section id="methodology" class="section" style="background:var(--bg-secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Methodology</div>
-          <h2>How We Test &amp; Score AI Tools</h2>
-          <p>Every review follows the same structured process. Here's exactly how we evaluate each tool.</p>
-        </div>
-        <div class="methodology-grid">
-          <div class="methodology-card">
-            <div class="methodology-card__num">01</div>
-            <div class="methodology-card__title">Hands-On Testing</div>
-            <div class="methodology-card__desc">We use every tool for real tasks over a minimum of one week. No shortcuts. We test writing, coding, reasoning, research, and any tool-specific capabilities.</div>
-          </div>
-          <div class="methodology-card">
-            <div class="methodology-card__num">02</div>
-            <div class="methodology-card__title">Standardized Benchmarks</div>
-            <div class="methodology-card__desc">We run every tool through the same set of benchmark prompts covering: creative writing, factual accuracy, reasoning puzzles, code generation, and document summarization.</div>
-          </div>
-          <div class="methodology-card">
-            <div class="methodology-card__num">03</div>
-            <div class="methodology-card__title">Scoring Rubric</div>
-            <div class="methodology-card__desc">Each category is scored 1–5 on consistent criteria. Overall scores are weighted averages, not gut feelings. We show our sub-scores so you can decide what matters most for your use case.</div>
-          </div>
-          <div class="methodology-card">
-            <div class="methodology-card__num">04</div>
-            <div class="methodology-card__title">Pricing Verification</div>
-            <div class="methodology-card__desc">We check pricing directly from each company's pricing page at time of publication. AI pricing changes often — we include the last-updated date on every review.</div>
-          </div>
-          <div class="methodology-card">
-            <div class="methodology-card__num">05</div>
-            <div class="methodology-card__title">Peer Review</div>
-            <div class="methodology-card__desc">Each review is checked against community consensus, independent benchmarks (MMLU, HumanEval, etc.), and public user feedback to ensure we're not outliers.</div>
-          </div>
-          <div class="methodology-card">
-            <div class="methodology-card__num">06</div>
-            <div class="methodology-card__title">Ongoing Updates</div>
-            <div class="methodology-card__desc">We re-test whenever a major update ships. AI models improve fast — a review from 6 months ago can be dangerously outdated. Every review shows its last-updated date.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCORING -->
-    <section class="section">
-      <div class="container container--narrow">
-        <div class="section-header" style="text-align:left;">
-          <div class="section-label">Scoring</div>
-          <h2>What Our Scores Mean</h2>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
-          <div class="card">
-            <div style="font-size:1.5rem;font-weight:800;color:var(--success);margin-bottom:0.25rem;">5.0</div>
-            <div style="font-weight:700;margin-bottom:0.4rem;">Exceptional</div>
-            <p style="font-size:0.875rem;margin:0;">Best in class. Sets the standard for its category. Minor flaws don't detract from an otherwise outstanding tool.</p>
-          </div>
-          <div class="card">
-            <div style="font-size:1.5rem;font-weight:800;color:var(--accent-secondary);margin-bottom:0.25rem;">4.0–4.9</div>
-            <div style="font-weight:700;margin-bottom:0.4rem;">Excellent</div>
-            <p style="font-size:0.875rem;margin:0;">Strong recommendation. Delivers real value, performs reliably, with only minor limitations.</p>
-          </div>
-          <div class="card">
-            <div style="font-size:1.5rem;font-weight:800;color:var(--accent);margin-bottom:0.25rem;">3.0–3.9</div>
-            <div style="font-weight:700;margin-bottom:0.4rem;">Good</div>
-            <p style="font-size:0.875rem;margin:0;">Solid tool with meaningful limitations. Worth considering for specific use cases.</p>
-          </div>
-          <div class="card">
-            <div style="font-size:1.5rem;font-weight:800;color:var(--warning);margin-bottom:0.25rem;">2.0–2.9</div>
-            <div style="font-weight:700;margin-bottom:0.4rem;">Below Average</div>
-            <p style="font-size:0.875rem;margin:0;">Significant problems. Only recommended if you have a very specific, niche use case.</p>
-          </div>
-        </div>
-        <p>We score five dimensions for most AI assistants: <strong>Writing Quality, Coding, Reasoning, Value for Money,</strong> and <strong>Ease of Use</strong>. For specialized tools like image generators, we adapt the dimensions to fit the tool's purpose.</p>
-      </div>
-    </section>
-
-    <!-- DISCLOSURE -->
-    <section id="disclosure" class="section" style="background:var(--bg-secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-      <div class="container container--narrow">
-        <div class="section-label">Disclosure</div>
-        <h2>Affiliate &amp; Commercial Relationships</h2>
-        <div class="highlight-box" style="margin:1.5rem 0;">
-          <p><strong>Key principle:</strong> Affiliate relationships never influence our scores, conclusions, or recommendations. We will recommend a tool with no affiliate program over a tool with one if the non-affiliate tool is better. Our editorial integrity is non-negotiable.</p>
-        </div>
-        <p>Some links on this site are affiliate links. This means if you click a link and purchase a subscription, we may receive a commission at no additional cost to you. Affiliate links are how we sustain this publication — covering subscription costs, testing time, and hosting.</p>
-        <h3>What we commit to:</h3>
-        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:0.5rem;margin:1rem 0 1.5rem;">
-          <li style="display:flex;gap:0.5rem;"><span style="color:var(--success);font-weight:700;">✓</span> <span style="color:var(--text-secondary);">We disclose all affiliate relationships on relevant pages</span></li>
-          <li style="display:flex;gap:0.5rem;"><span style="color:var(--success);font-weight:700;">✓</span> <span style="color:var(--text-secondary);">Scores are assigned before we consider monetization</span></li>
-          <li style="display:flex;gap:0.5rem;"><span style="color:var(--success);font-weight:700;">✓</span> <span style="color:var(--text-secondary);">We test tools ourselves; we don't rely on vendor-provided demos</span></li>
-          <li style="display:flex;gap:0.5rem;"><span style="color:var(--success);font-weight:700;">✓</span> <span style="color:var(--text-secondary);">We never accept payment for coverage or positive reviews</span></li>
-          <li style="display:flex;gap:0.5rem;"><span style="color:var(--success);font-weight:700;">✓</span> <span style="color:var(--text-secondary);">We update reviews when our honest assessment changes</span></li>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="/articles/best-ai-writing-tools-2026.html">Writing</a></li>
+          <li><a href="/articles/best-ai-image-generators-2026.html">Images</a></li>
+          <li><a href="/articles/best-ai-seo-tools-2026.html">SEO</a></li>
+          <li><a href="/articles/best-ai-automation-tools-2026.html">Automation</a></li>
+          <li><a href="/articles/best-ai-chatbots-2026.html">Chatbots</a></li>
         </ul>
-        <p>If you believe a review is inaccurate or outdated, you're welcome to reach out. We take feedback seriously and update reviews when warranted.</p>
       </div>
-    </section>
-
-    <!-- REVIEWS INDEX -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Our Reviews</div>
-          <h2>Read Our Latest Reviews</h2>
-          <p>Each review is independently tested and regularly updated.</p>
-        </div>
-        <div class="review-grid">
-          <a href="reviews/chatgpt.html" class="review-card" style="text-decoration:none;color:inherit;">
-            <div class="review-card__header"><div class="review-card__icon icon-chatgpt">🤖</div><div><div class="review-card__name">ChatGPT</div><div class="review-card__category">General AI Assistant</div></div></div>
-            <div class="review-card__rating"><span class="stars">★★★★★</span><span class="rating-value">4.8/5</span></div>
-            <p class="review-card__desc">The most versatile AI assistant — best all-rounder for most users.</p>
-            <div class="review-card__meta"><span class="review-card__price">Free · $20/mo</span><span class="review-card__link">Read Review →</span></div>
-          </a>
-          <a href="reviews/claude.html" class="review-card" style="text-decoration:none;color:inherit;">
-            <div class="review-card__header"><div class="review-card__icon icon-claude">🧠</div><div><div class="review-card__name">Claude</div><div class="review-card__category">Writing &amp; Analysis</div></div></div>
-            <div class="review-card__rating"><span class="stars">★★★★★</span><span class="rating-value">4.8/5</span></div>
-            <p class="review-card__desc">Best AI for writing quality and long-document analysis.</p>
-            <div class="review-card__meta"><span class="review-card__price">Free · $20/mo</span><span class="review-card__link">Read Review →</span></div>
-          </a>
-          <a href="reviews/gemini.html" class="review-card" style="text-decoration:none;color:inherit;">
-            <div class="review-card__header"><div class="review-card__icon icon-gemini">✨</div><div><div class="review-card__name">Gemini</div><div class="review-card__category">Google AI</div></div></div>
-            <div class="review-card__rating"><span class="stars">★★★★☆</span><span class="rating-value">4.3/5</span></div>
-            <p class="review-card__desc">Best for Google Workspace users and 1M token context needs.</p>
-            <div class="review-card__meta"><span class="review-card__price">Free · $20/mo</span><span class="review-card__link">Read Review →</span></div>
-          </a>
-          <a href="reviews/perplexity.html" class="review-card" style="text-decoration:none;color:inherit;">
-            <div class="review-card__header"><div class="review-card__icon icon-perplexity">🔍</div><div><div class="review-card__name">Perplexity AI</div><div class="review-card__category">AI Search</div></div></div>
-            <div class="review-card__rating"><span class="stars">★★★★★</span><span class="rating-value">4.6/5</span></div>
-            <p class="review-card__desc">Best AI for real-time research with cited sources.</p>
-            <div class="review-card__meta"><span class="review-card__price">Free · $20/mo</span><span class="review-card__link">Read Review →</span></div>
-          </a>
-          <a href="reviews/midjourney.html" class="review-card" style="text-decoration:none;color:inherit;">
-            <div class="review-card__header"><div class="review-card__icon icon-midjourney">🎨</div><div><div class="review-card__name">Midjourney</div><div class="review-card__category">Image Generation</div></div></div>
-            <div class="review-card__rating"><span class="stars">★★★★★</span><span class="rating-value">4.7/5</span></div>
-            <p class="review-card__desc">Best AI image generator for quality-conscious creators.</p>
-            <div class="review-card__meta"><span class="review-card__price">From $10/mo</span><span class="review-card__link">Read Review →</span></div>
-          </a>
-        </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/articles/">All Reviews</a></li>
+        </ul>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="footer-brand__logo"><div class="nav__logo-icon">🤖</div>AI Tool Reviews</div><p class="footer-brand__desc">Unbiased, in-depth reviews of AI tools. We independently test every tool so you can make confident decisions.</p></div>
-        <div class="footer-col"><div class="footer-col__title">Reviews</div><div class="footer-col__links"><a href="reviews/chatgpt.html">ChatGPT</a><a href="reviews/claude.html">Claude</a><a href="reviews/gemini.html">Gemini</a><a href="reviews/perplexity.html">Perplexity</a><a href="reviews/midjourney.html">Midjourney</a></div></div>
-        <div class="footer-col"><div class="footer-col__title">Site</div><div class="footer-col__links"><a href="/">Home</a><a href="about.html">About</a><a href="#methodology">Methodology</a></div></div>
-        <div class="footer-col"><div class="footer-col__title">Legal</div><div class="footer-col__links"><a href="#disclosure">Affiliate Disclosure</a></div></div>
-      </div>
-      <div class="footer-bottom"><span>© 2024 AI Tool Reviews. Independent &amp; unaffiliated.</span><span>Some links may be affiliate links. <a href="#disclosure">Disclosure</a>.</span></div>
     </div>
-  </footer>
+    <div class="footer-bottom">© 2026 AIToolReviews.co — Independent AI tool reviews</div>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

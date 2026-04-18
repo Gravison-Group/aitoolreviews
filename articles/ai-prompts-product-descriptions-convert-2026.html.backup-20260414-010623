@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompts for Product Descriptions That Convert (2026) — Copy-Paste Templates</title>
+  <meta name="description" content="15 copy-paste AI prompt templates that write product descriptions built to convert — for Shopify, Amazon, and Etsy sellers. Stop leaving sales on the table." />
+  <meta name="keywords" content="ai prompts for product descriptions, chatgpt product description prompt, ai product description templates, shopify product description ai, amazon product description prompt" />
+  <meta property="og:title" content="AI Prompts for Product Descriptions That Convert (2026)" />
+  <meta property="og:description" content="15 copy-paste AI prompt templates for ecommerce product descriptions that actually convert. Works with ChatGPT, Claude, Copy.ai, and Writesonic." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://aitoolreviews.co/articles/ai-prompts-product-descriptions-convert-2026.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #6c47ff;
+      --brand-light: #ede9ff;
+      --brand-dark: #4a28e0;
+      --text: #1a1a2e;
+      --muted: #5a5a72;
+      --bg: #ffffff;
+      --surface: #f8f7ff;
+      --border: #e2e0f0;
+      --code-bg: #1e1e2e;
+      --code-text: #cdd6f4;
+      --green: #22c55e;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --radius: 10px;
+      --shadow: 0 2px 16px rgba(108,71,255,0.08);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      background: var(--brand);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .site-header a { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+    .site-header nav { margin-left: auto; display: flex; gap: 20px; }
+    .site-header nav a { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
+    .site-header nav a:hover { color: #fff; text-decoration: none; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--brand) 0%, #9b72ff 100%);
+      color: #fff;
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+    .hero-meta {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    .hero-meta span::before { content: "• "; }
+    .hero-meta span:first-child::before { content: ""; }
+
+    /* Layout */
+    .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+    .content-wrap { padding: 56px 0 80px; }
+
+    /* Lead paragraph */
+    .lead {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      border-left: 4px solid var(--brand);
+      padding-left: 18px;
+      margin-bottom: 36px;
+      line-height: 1.65;
+    }
+
+    /* Typography */
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin: 52px 0 16px;
+      color: var(--text);
+      scroll-margin-top: 80px;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 32px 0 10px;
+      color: var(--text);
+    }
+    p { margin-bottom: 18px; }
+    ul, ol { margin: 0 0 20px 22px; }
+    li { margin-bottom: 8px; }
+    strong { font-weight: 700; }
+
+    /* Callout box */
+    .callout {
+      background: var(--brand-light);
+      border: 1px solid rgba(108,71,255,0.25);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 28px 0;
+      font-size: 0.95rem;
+    }
+    .callout a { font-weight: 600; }
+
+    /* Prompt cards */
+    .prompt-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin: 24px 0;
+      overflow: hidden;
+    }
+    .prompt-card-header {
+      background: var(--brand);
+      color: #fff;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .prompt-card-header .num {
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .prompt-card-header .title { font-weight: 700; font-size: 1rem; }
+    .prompt-card-body { padding: 0; }
+    .prompt-code {
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 20px 22px;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.82rem;
+      line-height: 1.65;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+      border: none;
+      overflow-x: auto;
+    }
+    .copy-btn {
+      display: block;
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-top: 1px solid var(--border);
+      padding: 10px;
+      font-size: 0.82rem;
+      color: var(--brand);
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-align: center;
+      transition: background 0.15s;
+    }
+    .copy-btn:hover { background: var(--brand-light); }
+
+    /* Before/After comparison */
+    .ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+    @media (max-width: 620px) { .ba-grid { grid-template-columns: 1fr; } }
+    .ba-box {
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .ba-box.before {
+      background: #fff5f5;
+      border: 1px solid #fca5a5;
+    }
+    .ba-box.after {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+    }
+    .ba-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .ba-box.before .ba-label { color: var(--red); }
+    .ba-box.after .ba-label { color: var(--green); }
+
+    /* Tips section */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    @media (max-width: 620px) { .tips-grid { grid-template-columns: 1fr; } }
+    .tip-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+    .tip-card .tip-icon { font-size: 1.4rem; margin-bottom: 8px; }
+    .tip-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .tip-card p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+
+    /* Tool cards */
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    @media (max-width: 620px) { .tool-grid { grid-template-columns: 1fr; } }
+    .tool-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      background: var(--surface);
+    }
+    .tool-card .tool-name { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
+    .tool-card .tool-best { font-size: 0.8rem; color: var(--brand); font-weight: 600; margin-bottom: 10px; }
+    .tool-card p { font-size: 0.88rem; color: var(--muted); margin-bottom: 12px; }
+    .tool-card .tool-price { font-size: 0.82rem; font-weight: 700; color: var(--text); }
+    .tool-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--brand);
+      color: #fff !important;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none !important;
+      transition: background 0.15s;
+    }
+    .tool-btn:hover { background: var(--brand-dark); }
+
+    /* Section dividers */
+    .section-divider {
+      border: none;
+      border-top: 2px solid var(--border);
+      margin: 52px 0;
+    }
+
+    /* Platform badges */
+    .platform-tag {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    /* FAQ */
+    .faq { margin: 28px 0; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      background: var(--surface);
+      padding: 16px 20px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-q:hover { background: var(--brand-light); }
+    .faq-a {
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      line-height: 1.65;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin: 32px 0;
+    }
+    .toc h4 { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 12px; }
+    .toc ol { margin: 0 0 0 18px; }
+    .toc li { font-size: 0.9rem; margin-bottom: 6px; }
+    .toc a { color: var(--brand); }
+
+    /* Footer */
+    .site-footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.7);
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .site-footer a { color: rgba(255,255,255,0.85); }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero { padding: 44px 16px 36px; }
+      .content-wrap { padding: 36px 0 60px; }
+      h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <a href="/">🔍 AIToolReviews.co</a>
+  <nav>
+    <a href="/articles/best-ai-writing-tools-2026.html">Writing Tools</a>
+    <a href="/articles/best-ai-image-generators-2026.html">Image AI</a>
+    <a href="/articles/">All Reviews</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="badge">📦 Ecommerce Prompts Guide</div>
+  <h1>AI Prompts for Product Descriptions That Convert (2026)</h1>
+  <p class="subtitle">15 copy-paste prompt templates for Shopify, Amazon, and Etsy — built for conversion, not just content.</p>
+  <div class="hero-meta">
+    <span>Updated April 2026</span>
+    <span>~2,000 words</span>
+    <span>15 prompt templates</span>
+    <span>Works with ChatGPT, Claude, Copy.ai, Writesonic</span>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="content-wrap">
+
+    <!-- Lead -->
+    <p class="lead">Most product descriptions fail before a shopper finishes the first sentence — not because the product is bad, but because the copy treats features like benefits, buries the value proposition, and reads like a spec sheet. AI can fix this. But only if you prompt it correctly.</p>
+
+    <p>Generic prompts produce generic descriptions. "Write a product description for a yoga mat" gives you something usable. The right conversion-focused prompt gives you something that makes people add to cart.</p>
+    <p>This guide gives you <strong>15 copy-paste prompt templates</strong> built specifically for ecommerce conversion — organized by product type, platform, and buyer psychology. Use them in ChatGPT, Claude, Copy.ai, Writesonic, or any AI writing tool.</p>
+
+    <div class="callout">
+      🛠️ <strong>Choosing your tool first?</strong> See our direct comparison: <a href="/articles/copyai-vs-writesonic-product-descriptions-2026.html">Copy.ai vs Writesonic for Product Descriptions</a> — we break down which tool wins for Shopify stores, Amazon sellers, and bulk catalogue work.
+    </div>
+
+    <!-- TOC -->
+    <div class="toc">
+      <h4>What's in this guide</h4>
+      <ol>
+        <li><a href="#why-fail">Why most product descriptions don't convert</a></li>
+        <li><a href="#framework">The conversion-first prompt framework</a></li>
+        <li><a href="#prompts">15 AI prompt templates (copy-paste ready)</a></li>
+        <li><a href="#before-after">Before & After: what good prompting changes</a></li>
+        <li><a href="#tips">Conversion optimization tips beyond the prompt</a></li>
+        <li><a href="#tools">Best AI tools for product descriptions</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+
+    <!-- Section 1 -->
+    <h2 id="why-fail">Why Most Product Descriptions Don't Convert</h2>
+    <p>Before the prompts, understand the underlying problem. Product descriptions fail for predictable reasons:</p>
+    <ul>
+      <li><strong>Features masquerading as benefits.</strong> "12,000 mAh battery" isn't a benefit. "Two full charges for your phone — enough for a weekend trip without hunting for outlets" is. The feature is what it is; the benefit is why the customer cares.</li>
+      <li><strong>No emotional hook.</strong> Shoppers make purchase decisions emotionally and justify them rationally. Copy that only hits rational attributes (specs, dimensions, materials) misses the emotional trigger that actually drives conversion.</li>
+      <li><strong>Generic voice.</strong> Copy that could describe any product from any brand builds zero trust. The specificity of your language signals that you actually understand what buyers need.</li>
+      <li><strong>Missing objection handling.</strong> Every product has an unspoken buyer objection — "Is this durable enough?" "Will it fit?" High-converting descriptions address these before the customer leaves to find answers elsewhere.</li>
+      <li><strong>Weak or absent CTAs.</strong> Product pages with passive copy convert lower than copy that actively moves the shopper toward a decision.</li>
+    </ul>
+    <p>AI, prompted correctly, solves all of these.</p>
+
+    <hr class="section-divider" />
+
+    <!-- Section 2 -->
+    <h2 id="framework">The Conversion-First Prompt Framework</h2>
+    <p>Every high-converting product description prompt has four elements. Build every prompt around these — the templates below do this automatically.</p>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">🎯</div>
+        <h4>1. Buyer Identity</h4>
+        <p>Not "shoppers who want yoga mats" — "women 28–42 who practice hot yoga 3x/week and are tired of mats that slip." The more specific, the more targeted the copy.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🔄</div>
+        <h4>2. Core Transformation</h4>
+        <p>What does the product change? Before state → after state. "From sore wrists during downward dog → confident, cushioned alignment on any surface."</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🔗</div>
+        <h4>3. Feature-to-Benefit Bridge</h4>
+        <p>List your features, then explicitly tell the AI to reframe each one as a specific customer benefit. Don't leave this implicit — the prompt must instruct the AI to do the translation.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🛡️</div>
+        <h4>4. Objection + Trust Signal</h4>
+        <p>Name the #1 buyer objection and tell the AI to address it. Include social proof signals (reviews, certifications, return policy) and instruct the AI to weave them in naturally.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Section 3: Prompts -->
+    <h2 id="prompts">15 AI Prompt Templates (Copy-Paste Ready)</h2>
+    <p>Organized by product type and platform. Replace the <code>[BRACKETED]</code> fields with your product details.</p>
+
+    <h3>🛍️ For Physical Products</h3>
+
+    <!-- Prompt 1 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">1</div>
+        <div>
+          <div class="title">Lifestyle Product (General)</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">General</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [PRODUCT NAME].
+
+Buyer: [describe target customer in 1-2 sentences — age, lifestyle, pain point]
+Features: [list 4-6 key features]
+Transformation: Before using this product, the customer feels [X]. After, they feel [Y].
+Top buyer objection: [name the #1 hesitation]
+Trust signals: [reviews count, certifications, guarantee, sourcing]
+Tone: [conversational/luxurious/playful/technical]
+Length: 150-200 words
+Platform: Shopify product page
+
+Reframe every feature as a specific customer benefit. Address the buyer 
+objection naturally within the copy. End with a soft CTA that creates 
+urgency without being pushy.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 2 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">2</div>
+        <div>
+          <div class="title">Amazon Listing (A+ Content Ready)</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write an Amazon product description for [PRODUCT NAME] in the [CATEGORY] category.
+
+Target keyword: [primary keyword]
+Secondary keywords: [2-3 secondary keywords]
+Features: [list features]
+Main buyer benefit: [what problem does this solve?]
+Competitor differentiator: [what makes this better than similar products?]
+Social proof: [star rating, review count, or bestseller status if applicable]
+
+Format:
+- Opening hook (1 sentence leading with buyer benefit, not the brand)
+- 3-5 bullet points: BENEFIT (feature detail)
+- 150-word descriptive paragraph
+- Stay within Amazon guidelines: no HTML, no unsubstantiated superlatives
+
+Optimize for the keyword without keyword stuffing. Every bullet must answer 
+"why does this matter to the buyer?"</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 3 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">3</div>
+        <div>
+          <div class="title">Skincare / Beauty Product</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [PRODUCT NAME], a [product type] for [skin concern/goal].
+
+Customer avatar: [describe — skin type, concern, what they've tried that hasn't worked]
+Key ingredients: [list actives and their functions]
+Texture/sensory experience: [how does it feel, smell, absorb?]
+Result timeline: [when will they see results?]
+Certifications: [cruelty-free, vegan, dermatologist-tested, etc.]
+Price point positioning: [drugstore / mid-range / luxury]
+
+Write in second-person ("your skin," "you'll notice"). Lead with the emotional 
+result (confidence, glowing skin, no more hiding). Then justify with ingredient 
+science. Handle the "another product that won't work" objection by citing 
+certifications or clinical data. Length: 175 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 4 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">4</div>
+        <div>
+          <div class="title">Apparel & Footwear</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a Shopify product description for [PRODUCT NAME].
+
+Fabric/material: [details]
+Fit: [sizing notes, how it runs]
+Occasion: [where/when would the customer wear this?]
+Customer: [who is this for? lifestyle context]
+Care instructions: [washing, maintenance]
+Brand tone: [casual/sophisticated/athletic/bohemian]
+
+Lead with how the customer will feel wearing this — not what it's made of.
+Include a single sentence that handles the "will this fit me?" objection by 
+describing fit style (relaxed, true to size, designed for X body type).
+Add a sensory detail (how does the fabric feel against skin?).
+End with a one-line CTA tied to the occasion.
+Length: 150 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 5 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">5</div>
+        <div>
+          <div class="title">Tech / Electronics (Two Versions)</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [PRODUCT NAME], a [device category].
+
+Specs to feature: [list key specs]
+Buyer type: [beginner / intermediate / professional / gifter]
+Primary use case: [what will they mainly use this for?]
+Compared to alternatives: [#1 reason to choose this over cheaper options?]
+Included in box: [list accessories]
+
+Write two versions:
+Version A (technical): Lead with specs, explain their real-world impact
+Version B (accessible): Lead with use case and outcome, specs as supporting detail
+
+Both versions: 150 words. Include one line addressing the "is it worth the 
+price?" objection using durability, warranty, or brand reputation.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 6 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">6</div>
+        <div>
+          <div class="title">Home Goods / Kitchenware</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [PRODUCT NAME] for [use case, e.g. "home bakers 
+who want restaurant-quality results"].
+
+What makes it different: [key differentiator vs. similar products]
+Materials / build quality: [durability signals]
+Who it's for: [home chef profile, cooking frequency, kitchen setup]
+What it replaces: [frustration from a lesser product this solves]
+Size / dimensions: [so buyers can visualize it in their space]
+
+Lead with the frustration the product eliminates, not with what it is.
+Create a micro-story in the first two sentences: "You've been [doing X the hard 
+way]. [Product] changes that."
+Include one care/maintenance detail that signals quality and longevity.
+End with a gifting angle if applicable.
+Length: 160 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 7 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">7</div>
+        <div>
+          <div class="title">Pet Products</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a Shopify product description for [PRODUCT NAME], a [product type] for 
+[pet type and owner type].
+
+Key features: [list]
+Safety credentials: [non-toxic, vet-approved, tested, certifications]
+Who buys this: [the owner — first-time? Experienced? Anxious about pet health?]
+The pet's experience: [how will the pet use/wear/eat this?]
+Top concern: [safety / quality / durability / value]
+
+Write for the pet owner, not the pet. The emotional driver is love and care.
+Lead with a line that validates the owner's concern.
+Address the safety objection with your certifications or sourcing.
+Keep it warm, not clinical.
+Length: 150 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <h3>💻 For Digital Products</h3>
+
+    <!-- Prompt 8 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">8</div>
+        <div>
+          <div class="title">Online Course / Digital Download</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Landing Page</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [COURSE/PRODUCT NAME], a digital [course/template/
+guide/tool] for [target audience].
+
+Outcome: What can the buyer do / achieve / become after purchasing?
+Format: [video course / PDF / template / software / membership]
+Time investment: [how long to complete or implement?]
+Included: [list what's inside]
+Biggest buyer hesitation: [I've bought courses before and not finished / 
+I'm not sure it applies / Is this worth the price?]
+
+Lead with the outcome, not the format. Use before/after language: 
+"Before: [struggle]. After: [transformation]."
+Address the hesitation with a specific guarantee, refund policy, or scope 
+limitation ("This is specifically for [narrow audience]").
+End with scarcity or urgency if genuine.
+Length: 200 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 9 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">9</div>
+        <div>
+          <div class="title">SaaS / Software Tool</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Product Page</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product page description for [SOFTWARE NAME], a [tool type] for [target user].
+
+Core problem it solves: [what painful manual process or gap does this replace?]
+Key features: [list 4-5]
+Integration ecosystem: [what tools does it connect with?]
+Pricing tier for this page: [free / starter / pro / enterprise]
+Proof: [customer count, reviews, case study stat, or brand names]
+
+Don't lead with features. Lead with the problem: "If you're still [doing X 
+manually / losing hours to Y / dealing with Z], [Product] was built for you."
+Translate each feature into time saved, revenue gained, or risk eliminated.
+Include one number-driven benefit.
+CTA language: action-oriented and low-friction.
+Length: 175 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <h3>🏪 Platform-Specific Optimization</h3>
+
+    <!-- Prompt 10 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">10</div>
+        <div>
+          <div class="title">Etsy Listing (Handmade / Custom)</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Etsy</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write an Etsy product listing description for [PRODUCT NAME], a handmade [product type].
+
+Made from: [materials, sourcing story if relevant]
+Customization options: [colors, sizes, personalization]
+Process: [hand-crafted detail that signals artisan quality]
+Buyer: [gift-giver / personal treat / home decorator / collector]
+Shipping: [processing time, packaging care detail]
+
+Etsy buyers value story and craft. Open with the "why I make this" angle.
+Include sensory details (texture, weight, finish, scent if relevant).
+For gift-buyers: call out gifting occasions.
+For personalized items: explain the customization process simply.
+Use Etsy SEO naturally: include [primary keyword] in the first 40 words.
+Length: 200 words. Warm, personal tone — not corporate.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 11 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">11</div>
+        <div>
+          <div class="title">Shopify Bundle / Multi-Pack</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a Shopify product description for a bundle: [BUNDLE NAME], which includes 
+[list items].
+
+Individual item price vs. bundle price: [$X vs $Y — $Z savings]
+Who buys bundles: [starter kit buyer / gifter / bulk buyer / loyal customer]
+Primary benefit of buying together: [convenience / savings / complete solution]
+Suggested use case: [when/how would they use all items together?]
+
+Lead with the value math: "Get [X, Y, and Z] together and save $[amount] — 
+everything you need to [achieve outcome] without the guesswork."
+Make the bundle feel curated, not just discounted.
+Address the "do I need all of this?" objection.
+End with urgency if applicable.
+Length: 150 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 12 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">12</div>
+        <div>
+          <div class="title">Amazon FBA — Competitive Category</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Amazon</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write an Amazon product description for [PRODUCT] in a highly competitive 
+category ([category name]).
+
+Primary keyword: [keyword]
+What makes this stand out: [your differentiator — not just "quality"]
+Specific buyer complaint about competing products: [from competitor reviews]
+Your solution to that complaint: [how your product addresses it]
+Guarantee / return policy: [details]
+
+Open with the competitor complaint framing: "Tired of [product type] that 
+[common problem]? [Brand] [product] was designed to fix that."
+Use complaint → solution structure throughout the bullets.
+Bullet format: UPPERCASE BENEFIT — lowercase explanation.
+Don't use prohibited claims.
+Length: 5-7 bullets + 150-word paragraph.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <h3>🚀 Advanced Conversion Prompts</h3>
+
+    <!-- Prompt 13 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">13</div>
+        <div>
+          <div class="title">Luxury / Premium Positioning</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">DTC</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a product description for [PRODUCT NAME], priced at [$price], positioned 
+as a premium alternative to [cheaper competitor category].
+
+Materials / craftsmanship: [what justifies the price?]
+Brand story element: [heritage, sourcing, process, founder story]
+Customer: [someone who buys quality once vs. cheap repeatedly]
+Emotional driver: [status / self-care / lasting value / craftsmanship appreciation]
+
+Never apologize for the price. Write as if the price is evidence of quality, 
+not a barrier. Use language that signals exclusivity without being pretentious.
+Avoid sale language entirely. Premium products aren't discounted — they're 
+invested in. One concrete durability or longevity signal required.
+Length: 175 words. Tone: confident, understated, craft-focused.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 14 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">14</div>
+        <div>
+          <div class="title">Subscription / Replenishment Product</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">DTC</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a Shopify product description for [PRODUCT NAME], available as a one-time 
+purchase or subscription (save [X]%).
+
+Product: [what it is]
+Replenishment frequency: [how often do buyers need to reorder?]
+Core benefit of subscribing: [savings / convenience / never run out]
+Cancellation policy: [cancel or pause anytime — reduce friction]
+
+Lead with the pain of running out: "You shouldn't have to remember to reorder 
+[product]. Set it once, and it shows up when you need it."
+Make the subscription math obvious.
+Address the lock-in fear directly: "Cancel or pause anytime — no questions."
+For the one-time option: brief, no-pressure framing.
+Length: 175 words.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <!-- Prompt 15 -->
+    <div class="prompt-card">
+      <div class="prompt-card-header">
+        <div class="num">15</div>
+        <div>
+          <div class="title">High-Ticket / Transformation Product (PAS Framework)</div>
+          <div style="font-size:0.8rem;opacity:0.85;">
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Shopify</span>
+            <span class="platform-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Landing Page</span>
+          </div>
+        </div>
+      </div>
+      <pre class="prompt-code">Write a high-converting product description for [PRODUCT NAME], priced at [$X], 
+for buyers considering a significant purchase decision.
+
+The before state: [what frustration does the buyer have without this product?]
+The after state: [what does their life/work/routine look like after using it?]
+The gap: [what has the buyer already tried that hasn't worked?]
+What makes this different: [specific mechanism or feature that produces the transformation]
+Risk reversal: [trial period, guarantee, payment plan, warranty]
+
+Use the PAS framework:
+Problem: Name the before state specifically — don't generalize.
+Agitate: Show you understand how frustrating the problem is (1 sentence of empathy).
+Solve: Introduce the product as the specific solution. Be concrete about the mechanism.
+End with strong risk reversal: "Try it for [X days]. If [transformation] 
+doesn't happen, [guarantee]."
+Length: 225 words. Tone: empathetic, direct, confident.</pre>
+      <button class="copy-btn" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Before/After -->
+    <h2 id="before-after">Before & After: What Good Prompting Actually Changes</h2>
+    <p>Here's the same product — a wireless phone charger — described two ways.</p>
+
+    <div class="ba-grid">
+      <div class="ba-box before">
+        <div class="ba-label">❌ Without a conversion prompt</div>
+        <p>"This wireless charger features 15W fast charging and is compatible with all Qi-enabled devices. It has a sleek, minimalist design and an LED indicator. Includes a USB-C cable."</p>
+      </div>
+      <div class="ba-box after">
+        <div class="ba-label">✅ With Prompt 5 (Tech — accessible)</div>
+        <p>"Plug in once. Charge everything. The [Brand] wireless pad delivers 15W fast charging — your phone from dead to 80% in under an hour. Works with every iPhone, Samsung, and Qi device you own. The slim LED indicator lets you know it's working without lighting up your room at 2am. Built to last: the reinforced coil holds up to daily use for years, not months. If it's not the easiest charging upgrade you've made, return it — no hassle."</p>
+      </div>
+    </div>
+
+    <p>Same specs. Completely different conversion potential. The second version costs $0 more and takes 90 seconds with the right prompt.</p>
+
+    <hr class="section-divider" />
+
+    <!-- Tips -->
+    <h2 id="tips">Conversion Optimization Tips Beyond the Prompt</h2>
+
+    <div class="callout">
+      💡 For a broader look at which AI writing tools work best for ecommerce stores, see our <a href="/articles/best-ai-writing-tools-2026.html">Best AI Writing Tools 2026</a> guide — includes pricing comparisons and workflow integrations.
+    </div>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">🎯</div>
+        <h4>Lead with the Benefit, Not the Name</h4>
+        <p>Your first sentence should answer "what does this do for me?" — not state the product name. Shopify, Amazon, and Etsy all reward copy that hooks faster.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🔬</div>
+        <h4>Use Specificity as Trust</h4>
+        <p>Vague: "high-quality materials." Specific: "316 marine-grade stainless steel — the same grade used in offshore boat fittings." Specificity signals authenticity.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🛡️</div>
+        <h4>Handle One Objection Well</h4>
+        <p>Don't try to handle every hesitation. Focus on the #1 thing that stops a qualified buyer from converting and handle it thoroughly.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">⭐</div>
+        <h4>Weave Social Proof In</h4>
+        <p>Don't just add stars — integrate proof into the narrative: "More than 8,000 home bakers have replaced their old pans with this one — most say they'll never go back."</p>
+      </div>
+    </div>
+
+    <h3>Platform-Specific Formatting Rules</h3>
+    <ul>
+      <li><strong>Amazon:</strong> Buyers scan bullets — front-load every bullet with the benefit in CAPS. Keep bullets parallel in structure.</li>
+      <li><strong>Shopify:</strong> Readers scroll — use short paragraphs, white space, and sensory language. Mobile preview your copy before publishing.</li>
+      <li><strong>Etsy:</strong> Shoppers read for story — use warmth, craft language, and personal detail. The first 160 characters show in search results; make them count.</li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <!-- Tools -->
+    <h2 id="tools">Best AI Tools for Product Description Writing</h2>
+    <p>The prompts above work in any AI writing tool — but these four handle product description workflows particularly well.</p>
+
+    <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-name">Copy.ai</div>
+        <div class="tool-best">Best for: Shopify — tone variety</div>
+        <p>Excellent short-copy templates and strong ecommerce-specific workflows. Best for stores under 200 SKUs who need tone precision.</p>
+        <div class="tool-price">From $49/month</div>
+        <a href="https://copy.ai" class="tool-btn" rel="nofollow sponsored" target="_blank">Try Copy.ai →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">Writesonic</div>
+        <div class="tool-best">Best for: Amazon — volume output</div>
+        <p>Built-in Amazon format templates and better bulk generation than most tools. Strong for sellers with large catalogues.</p>
+        <div class="tool-price">From $16/month</div>
+        <a href="https://writesonic.com" class="tool-btn" rel="nofollow sponsored" target="_blank">Try Writesonic →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">Jasper AI</div>
+        <div class="tool-best">Best for: Brand voice consistency</div>
+        <p>Jasper's brand voice training ensures consistent tone across 500+ SKUs. Higher price point justified for established brands.</p>
+        <div class="tool-price">From $49/month</div>
+        <a href="https://jasper.ai?fpr=gravison" class="tool-btn" rel="nofollow sponsored" target="_blank">Try Jasper →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">ChatGPT Plus / Claude</div>
+        <div class="tool-best">Best for: High-stakes, one-off descriptions</div>
+        <p>Use the 15 prompts above directly. Slower for bulk work but produces the highest-quality individual descriptions when the prompt is dialed in.</p>
+        <div class="tool-price">$20/month</div>
+        <a href="https://chat.openai.com" class="tool-btn" rel="nofollow" target="_blank">Try ChatGPT →</a>
+      </div>
+    </div>
+
+    <div class="callout">
+      🔍 Can't decide between Copy.ai and Writesonic? We tested both exclusively for product descriptions: <a href="/articles/copyai-vs-writesonic-product-descriptions-2026.html">Copy.ai vs Writesonic for Product Descriptions — Full Comparison →</a>
+    </div>
+
+    <p>For a complete breakdown of all major tools including Jasper: <a href="/articles/jasper-vs-copyai-vs-writesonic-comparison.html">Jasper vs Copy.ai vs Writesonic — Which AI Writing Tool Wins? →</a></p>
+
+    <hr class="section-divider" />
+
+    <!-- FAQ -->
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">How do I use these prompts? <span>▼</span></div>
+        <div class="faq-a">Copy the prompt template, replace the bracketed fields with your product details, and paste into ChatGPT, Claude, Copy.ai, or Writesonic. Review the output, adjust tone if needed, and use it directly or as a first draft. Most prompts produce publish-ready copy with one round of light editing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do these prompts work for any product? <span>▼</span></div>
+        <div class="faq-a">Yes, with adaptation. The core framework — buyer identity, feature-to-benefit bridge, objection handling — applies across all physical and digital products. The platform-specific prompts (Amazon, Etsy, Shopify) handle formatting differences. If your product type isn't listed, use Prompt 1 (General) as your base.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I use these for bulk catalogue work? <span>▼</span></div>
+        <div class="faq-a">Yes — but automate the variable injection. Build a spreadsheet with columns for each bracketed field (product name, features, buyer objection, etc.) and use a tool like Writesonic's bulk generation or a custom script to batch-process. Don't manually fill each prompt for 500 SKUs — that defeats the purpose.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Will AI-written product descriptions be penalized by Google? <span>▼</span></div>
+        <div class="faq-a">Not if they're specific, accurate, and genuinely useful. Generic, spun, or keyword-stuffed AI descriptions can hurt rankings. Descriptions written with the prompts above — specific, benefit-driven, with unique product details injected — perform fine in search and better in conversion than generic descriptions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long should product descriptions be? <span>▼</span></div>
+        <div class="faq-a">
+          <ul style="margin-left: 18px; margin-top: 8px;">
+            <li><strong>Amazon:</strong> 5-7 bullets (150-250 words) + 150-word paragraph</li>
+            <li><strong>Shopify:</strong> 100-250 words depending on product complexity</li>
+            <li><strong>Etsy:</strong> 150-300 words (Etsy buyers read more)</li>
+            <li><strong>Digital products / high-ticket:</strong> 200-350 words</li>
+          </ul>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the most common mistake when using AI for product descriptions? <span>▼</span></div>
+        <div class="faq-a">Using the output as-is without adding product-specific details. AI doesn't know your exact product, your specific customers, or your competitive differentiation. The prompts structure the output — but you need to inject the specifics that make it accurate and trustworthy. Always add at least one unique detail that couldn't come from a generic description.</div>
+      </div>
+    </div>
+
+  </div><!-- /content-wrap -->
+</div><!-- /container -->
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/articles/">All Articles</a>
+    <a href="/articles/best-ai-writing-tools-2026.html">Writing Tools</a>
+    <a href="/articles/copyai-vs-writesonic-product-descriptions-2026.html">Copy.ai vs Writesonic</a>
+  </div>
+  <p>© 2026 AIToolReviews.co — Independent reviews. Some links are affiliate links.<br />
+  <small>We earn a commission at no extra cost to you. Our reviews remain independent.</small></p>
+</footer>
+
+<script>
+  // Copy prompt to clipboard
+  function copyPrompt(btn) {
+    const pre = btn.previousElementSibling;
+    navigator.clipboard.writeText(pre.textContent).then(() => {
+      btn.textContent = '✅ Copied!';
+      setTimeout(() => btn.textContent = '📋 Copy Prompt', 2000);
+    });
+  }
+
+  // Simple FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const answer = item.querySelector('.faq-a');
+      const isOpen = answer.style.display === 'block';
+      // Close all
+      document.querySelectorAll('.faq-a').forEach(a => a.style.display = 'none');
+      document.querySelectorAll('.faq-q span').forEach(s => s.textContent = '▼');
+      // Toggle current
+      if (!isOpen) {
+        answer.style.display = 'block';
+        q.querySelector('span').textContent = '▲';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

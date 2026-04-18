@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <style>
+    .background {
+      fill: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      fill: white;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      fill: rgba(255, 255, 255, 0.9);
+      text-anchor: middle;
+    }
+  </style>
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <text x="600" y="280" class="title">Best Expense Management</text>
+  <text x="600" y="340" class="title">Software 2026</text>
+  <text x="600" y="400" class="subtitle">AI Tool Reviews Comparison</text>
+  <text x="600" y="500" class="subtitle">aitoolreviews.co</text>
+</svg>

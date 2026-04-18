@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHVMG4P4YP"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag("js", new Date());
+ gtag("config", "G-KHVMG4P4YP");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Prompts for SEO Blog Posts That Rank (2026) | AIToolReviews.co</title>
+<meta name="description" content="12 copy-paste ChatGPT prompts for SEO blog posts that rank in 2026. Includes keyword integration strategies, AEO prompts, and a 5-part prompting framework for search-optimized content.">
+<meta property="og:title" content="ChatGPT Prompts for SEO Blog Posts That Rank (2026)">
+<meta property="og:description" content="12 proven prompt templates for writing SEO blog posts with ChatGPT. Keyword placement, AEO formatting, pillar pages, and more — all copy-paste ready.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aitoolreviews.co/articles/chatgpt-prompts-seo-blog-posts-2026.html">
+<link rel="canonical" href="https://aitoolreviews.co/articles/chatgpt-prompts-seo-blog-posts-2026.html">
+<meta name="impact-site-verification" value="083f318d-45c4-4a07-a7da-f589cda5b865">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ChatGPT Prompts for SEO Blog Posts That Rank (2026)",
+  "description": "12 copy-paste ChatGPT prompts for SEO blog posts that rank in 2026. Includes keyword integration strategies, AEO prompts, and a 5-part prompting framework for search-optimized content.",
+  "author": {"@type": "Organization", "name": "AIToolReviews.co"},
+  "publisher": {"@type": "Organization", "name": "AIToolReviews.co"},
+  "dateModified": "2026-04-13",
+  "datePublished": "2026-04-13"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I write SEO prompts for ChatGPT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with a clear role ('You are an SEO content writer'), specify your primary keyword and where to place it, list the required subtopics, define the structure (H2s, word count, FAQ), and state what to avoid. The more specific the brief, the less editing you'll need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a regular prompt and an SEO prompt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Regular prompts optimize for readability and completeness. SEO prompts add keyword placement instructions, structural requirements that signal authority to crawlers, intent-matching requirements, and AEO formatting so content gets featured in AI answer engines like Google AI Overviews and Perplexity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can ChatGPT write content that ranks on Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — but not with generic prompts. AI-generated content ranks when it's accurately targeted to a specific search intent, covers subtopics in depth, and is edited to remove generic phrasing. Use SEO-specific prompt templates and treat the first draft as a starting point, not the finished product."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I tell the AI what keywords to include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Explicitly listing your primary keyword, 3-4 secondary keywords, and any LSI terms gives the AI the vocabulary to produce naturally-optimized content. Without this, it will choose its own language — which may or may not match what people actually search."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many prompts does it take to write one SEO article?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A well-built single prompt can produce a publish-ready first draft. In practice, most experienced SEO writers use 2-3 prompts per article: one for the draft, one for the FAQ section, and one humanization or editing pass."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI tool is best for SEO blog posts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jasper AI leads for teams due to native Surfer SEO integration. ChatGPT Plus is the best value for solo creators at $20/month. Claude handles long-form drafts and editing tasks well. The right choice depends on your volume, budget, and whether you need built-in SEO scoring."
+      }
+    }
+  ]
+}</script>
+<style>
+.prompt-box {
+  background: #f8f9ff;
+  border: 1px solid #d0d7ff;
+  border-left: 4px solid #4a6cf7;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88em;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  position: relative;
+}
+.prompt-box::before {
+  content: "📋 Copy this prompt";
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.78em;
+  font-weight: 600;
+  color: #4a6cf7;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.prompt-label {
+  font-weight: 700;
+  color: #1a1a2e;
+  font-size: 1.05em;
+  margin: 28px 0 6px 0;
+}
+.prompt-number {
+  display: inline-block;
+  background: #4a6cf7;
+  color: #fff;
+  font-size: 0.78em;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 8px;
+  letter-spacing: 0.04em;
+}
+.prompt-group-heading {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin: 36px 0 16px 0;
+  letter-spacing: 0.03em;
+}
+.framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+@media (max-width: 640px) {
+  .framework-grid { grid-template-columns: 1fr; }
+}
+.framework-card {
+  background: #f0f4ff;
+  border: 1px solid #d0d7ff;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+.framework-card h4 {
+  margin: 0 0 6px 0;
+  color: #1a1a2e;
+  font-size: 0.95em;
+}
+.framework-card p {
+  margin: 0;
+  font-size: 0.88em;
+  color: #444;
+  line-height: 1.5;
+}
+.framework-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.framework-step:last-child { border-bottom: none; }
+.step-num {
+  background: #4a6cf7;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85em;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-content strong { display: block; margin-bottom: 3px; color: #1a1a2e; }
+.step-content p { margin: 0; font-size: 0.9em; color: #555; line-height: 1.5; }
+.tool-card {
+  background: #fff;
+  border: 1px solid #e0e4f0;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.tool-badge {
+  background: #4a6cf7;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 3px 9px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.tool-badge.budget { background: #22c55e; }
+.tool-badge.team { background: #f59e0b; }
+.tool-badge.volume { background: #8b5cf6; }
+.tool-info h4 { margin: 0 0 4px 0; font-size: 1em; color: #1a1a2e; }
+.tool-info p { margin: 0 0 6px 0; font-size: 0.88em; color: #555; line-height: 1.5; }
+.tool-info .price { font-size: 0.82em; font-weight: 600; color: #4a6cf7; }
+.cta-box {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 32px 0;
+  text-align: center;
+}
+.cta-box h3 { margin: 0 0 8px 0; font-size: 1.2em; }
+.cta-box p { margin: 0 0 18px 0; opacity: 0.85; font-size: 0.95em; }
+.cta-box a {
+  display: inline-block;
+  background: #4a6cf7;
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin: 4px 8px;
+  transition: background 0.2s;
+}
+.cta-box a:hover { background: #3558e0; }
+.cta-box a.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.cta-box a.secondary:hover { background: rgba(255,255,255,0.1); }
+.callout {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 0.93em;
+  line-height: 1.6;
+}
+.callout strong { color: #92400e; }
+.rule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+@media (max-width: 720px) {
+  .rule-grid { grid-template-columns: 1fr; }
+}
+.rule-card {
+  background: #fff;
+  border: 1px solid #e0e4f0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.rule-number {
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #4a6cf7;
+  display: block;
+  margin-bottom: 4px;
+}
+.rule-card h4 { margin: 0 0 6px 0; font-size: 0.9em; color: #1a1a2e; }
+.rule-card p { margin: 0; font-size: 0.83em; color: #666; line-height: 1.5; }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="/" class="logo">AIToolReviews.co</a>
+    <ul>
+      <li><a href="/articles/best-ai-writing-tools-seo-content-2026.html">Best SEO AI Tools</a></li>
+      <li><a href="/articles/best-ai-writing-tools-blog-posts-2026.html">Blog Writing</a></li>
+      <li><a href="/articles/best-prompts-ai-blog-writing-beginners-2026.html">AI Prompts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="article-container">
+
+<article>
+
+<div class="article-meta">
+  <span class="category-tag">AI Writing · SEO Prompts</span>
+  <span class="read-time">8 min read</span>
+  <span class="date">Updated April 2026</span>
+</div>
+
+<h1>ChatGPT Prompts for SEO Blog Posts That Rank (2026)</h1>
+
+<p class="article-intro">Most AI-generated blog posts don't rank — not because the content is bad, but because the prompts are built for readability, not search visibility. SEO-focused prompting is a different discipline. You're not just asking for a good article; you're engineering an output that satisfies search intent, signals topical authority, and structures information the way Google and AI answer engines expect to see it. This guide gives you 12 copy-paste prompt templates built specifically for ranking, plus the framework for writing your own SEO-tuned prompts from scratch.</p>
+
+<div class="toc">
+  <strong>In this guide:</strong>
+  <ol>
+    <li><a href="#why-fail">Why Most AI Prompts Fail for SEO</a></li>
+    <li><a href="#framework">The 5-Component SEO Prompt Framework</a></li>
+    <li><a href="#prompts">12 ChatGPT Prompts for SEO Blog Posts</a></li>
+    <li><a href="#tools">Which AI Tool to Use for Each Prompt</a></li>
+    <li><a href="#keyword-rules">Keyword Integration: The 3 Rules</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ol>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="why-fail">Why Most AI Prompts Fail for SEO</h2>
+
+<p>Generic prompts produce generic content. When you ask ChatGPT to "write a blog post about keyword research," you get a surface-level overview that matches thousands of other posts covering the same topic the same way. Google doesn't reward average.</p>
+
+<p>SEO prompts are different because they explicitly instruct the AI on:</p>
+<ul>
+  <li><strong>Search intent:</strong> Is the reader trying to learn, compare, or buy?</li>
+  <li><strong>Content depth:</strong> What subtopics must be covered to satisfy the query fully?</li>
+  <li><strong>Keyword placement:</strong> Where exactly should the primary and secondary keywords appear?</li>
+  <li><strong>Structural signals:</strong> What heading hierarchy tells crawlers this is authoritative content?</li>
+  <li><strong>Answer-engine optimization (AEO):</strong> How do you write so AI answer engines (Perplexity, ChatGPT search, Google AI Overviews) quote your content?</li>
+</ul>
+
+<div class="callout">
+  <strong>Choosing your tool first?</strong> Before diving into prompts, see our breakdown of the <a href="/articles/best-ai-writing-tools-seo-content-2026.html">Best AI Writing Tools for SEO Content 2026</a> — we tested which ones produce the most ranking-ready output out of the box, and which need the heaviest prompting to get there.
+</div>
+
+<!-- ============================================================ -->
+<h2 id="framework">The SEO Prompt Framework (5 Components)</h2>
+
+<p>Every high-performing SEO prompt has these five elements. Miss one and quality drops significantly.</p>
+
+<div class="framework-step">
+  <div class="step-num">1</div>
+  <div class="step-content">
+    <strong>Role + Context</strong>
+    <p>Tell the AI who it is and what it knows. "You are an SEO content strategist with 8 years of experience writing for SaaS and B2B tech blogs" produces meaningfully different output than "write me a blog post."</p>
+  </div>
+</div>
+<div class="framework-step">
+  <div class="step-num">2</div>
+  <div class="step-content">
+    <strong>Primary Keyword + Search Intent</strong>
+    <p>State the exact keyword and what stage of the funnel it represents. "The primary keyword is 'best project management software for agencies' — this is a bottom-of-funnel commercial investigation query."</p>
+  </div>
+</div>
+<div class="framework-step">
+  <div class="step-num">3</div>
+  <div class="step-content">
+    <strong>Required Subtopics</strong>
+    <p>Provide the outline or the key questions that must be answered. This is where topical authority comes from. Don't let the AI guess what to include — it will default to the average, and average doesn't rank.</p>
+  </div>
+</div>
+<div class="framework-step">
+  <div class="step-num">4</div>
+  <div class="step-content">
+    <strong>Structural Instructions</strong>
+    <p>Specify heading structure (H1/H2/H3), paragraph length, list usage, and table requirements. Google and AI answer engines parse structure to understand content hierarchy.</p>
+  </div>
+</div>
+<div class="framework-step">
+  <div class="step-num">5</div>
+  <div class="step-content">
+    <strong>Output Constraints</strong>
+    <p>Word count, tone, persona, what to avoid (keyword stuffing, filler phrases, repetitive conclusions). Being explicit here is the difference between a first draft and a publishable draft.</p>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="prompts">12 ChatGPT Prompts for SEO Blog Posts</h2>
+
+<!-- GROUP 1 -->
+<div class="prompt-group-heading">📊 Group 1: Research &amp; Intent Mapping</div>
+
+<p class="prompt-label"><span class="prompt-number">01</span> Keyword Intent Analysis</p>
+<p>Use before writing. Maps the full search intent landscape so your content covers exactly what rankers expect.</p>
+<div class="prompt-box">You are an SEO strategist. Analyze the search intent behind the keyword "[primary keyword]".
+
+Return:
+1. Intent type (informational/commercial/transactional/navigational)
+2. What the reader is trying to accomplish
+3. What must be covered for this content to fully satisfy the query
+4. 5 semantically related keywords (LSI) to include naturally in the body
+5. 3 common follow-up questions readers ask after this query
+
+Format as a structured brief I can hand to a writer.</div>
+
+<p class="prompt-label"><span class="prompt-number">02</span> Competitor Gap Analysis Brief</p>
+<p>Forces the AI to think about differentiation — what existing articles miss, and how to go deeper.</p>
+<div class="prompt-box">You are an SEO content strategist. I want to create content that outranks existing articles on "[primary keyword]".
+
+Assume the top 3 results cover: [briefly describe what typical articles on this topic include].
+
+Write a content brief that:
+- Identifies what they likely miss (depth, examples, specificity)
+- Proposes an angle that makes my article stand out
+- Lists 8-10 H2 sections that go deeper than the average article
+- Suggests one data point or original insight I could include to earn backlinks
+
+Target word count: [X] words. Target audience: [describe audience].</div>
+
+<!-- GROUP 2 -->
+<div class="prompt-group-heading">✍️ Group 2: Full Article Generation</div>
+
+<p class="prompt-label"><span class="prompt-number">03</span> The Complete SEO Article Prompt</p>
+<p>The workhorse. Produces a full structured draft with all on-page SEO elements baked in.</p>
+<div class="prompt-box">You are an expert SEO content writer. Write a complete blog post optimized for the keyword "[primary keyword]".
+
+Details:
+- Primary keyword: [keyword] — use in H1, first paragraph, one H2, and conclusion
+- Secondary keywords to include naturally: [keyword 2], [keyword 3], [keyword 4]
+- Word count: [1,500-2,000] words
+- Audience: [describe — e.g., "small business owners who have never run SEO before"]
+- Search intent: [informational / commercial / transactional]
+- Tone: [e.g., "practical and direct — no fluff, first-person where appropriate"]
+
+Structure:
+- H1: Include primary keyword
+- Introduction (150 words): Hook, problem statement, what this article covers
+- H2 sections: [list your 5-7 required subtopics]
+- Conclusion: Summarize key points, include a clear CTA
+- FAQ section: 4 questions readers actually search, with direct 2-3 sentence answers
+
+Avoid: keyword stuffing, filler phrases ("in today's digital landscape"), passive voice, generic conclusions.</div>
+
+<p class="prompt-label"><span class="prompt-number">04</span> Answer-Engine Optimized Article (AEO)</p>
+<p>Specifically structured to win Google AI Overviews, Perplexity answers, and ChatGPT citations.</p>
+<div class="prompt-box">You are an SEO writer specializing in content that gets featured in AI answer engines (Google AI Overviews, Perplexity, ChatGPT search).
+
+Write a blog post on "[topic]" targeting the keyword "[primary keyword]".
+
+AEO requirements:
+- Open with a direct 2-3 sentence answer to the query (before any context or background)
+- Use question-format H2s that mirror how people search ("What is X?", "How do you Y?", "Is X worth it?")
+- Include at least one structured comparison (table or bullet list that AI engines can extract as a snapshot)
+- Write definitions in the format: "[Term] is [concise definition]. [One sentence of context]."
+- End each major section with a 1-sentence summary statement
+
+Primary keyword: [keyword]
+Word count: [1,500] words
+Audience: [audience]</div>
+
+<p class="prompt-label"><span class="prompt-number">05</span> Pillar Page Generator</p>
+<p>Builds the anchor content for a full topic cluster — the page that everything else links back to.</p>
+<div class="prompt-box">You are an SEO architect. Create a comprehensive pillar page for the topic cluster "[main topic]".
+
+The primary keyword is "[keyword]" — this page should rank for it and support 8-10 cluster articles that link back to it.
+
+Pillar page requirements:
+- 2,500-3,000 words
+- Cover every major subtopic within [main topic] at a summary level (200-300 words each)
+- Each section should link contextually to a cluster article (use placeholder: [Link: article title])
+- Include a table of contents with anchor links
+- Open with an expert definition and a clear scope statement ("This guide covers X but not Y")
+- Include a comparison table of key options/approaches
+- Conclude with a "Next Steps" section pointing readers to the most relevant cluster articles</div>
+
+<!-- GROUP 3 -->
+<div class="prompt-group-heading">🔧 Group 3: Structural &amp; On-Page Optimization</div>
+
+<p class="prompt-label"><span class="prompt-number">06</span> SEO-Optimized Introduction Writer</p>
+<p>Generates three introduction variants — pick the one that best matches your angle and audience.</p>
+<div class="prompt-box">Write three different introductions for a blog post targeting "[primary keyword]".
+
+Each introduction must:
+- Be 100-150 words
+- Include the primary keyword in the first two sentences
+- Hook with a specific pain point, statistic, or counterintuitive claim
+- End with a clear preview of what the article covers
+
+Style variations:
+1. Problem-first (lead with what goes wrong without this knowledge)
+2. Stat-first (lead with a surprising number)
+3. Contrarian (lead with a commonly held belief that's wrong)
+
+Do not use: "In today's world", "Are you looking for", "Have you ever wondered"</div>
+
+<p class="prompt-label"><span class="prompt-number">07</span> Meta Title &amp; Description Generator</p>
+<p>Produces five title/description pairs ready to A/B test — crucial for CTR optimization.</p>
+<div class="prompt-box">Generate 5 meta title and description pairs for a blog post targeting the keyword "[primary keyword]".
+
+Rules:
+- Meta title: 50-60 characters, include keyword, include year if relevant, create urgency or promise
+- Meta description: 140-155 characters, expand on the title promise, include a secondary keyword, end with implied action
+
+Audience: [describe]
+The article covers: [brief summary of what the post actually contains]
+
+Format as a numbered list with Title and Description labeled on separate lines.</div>
+
+<p class="prompt-label"><span class="prompt-number">08</span> FAQ Section Generator (Schema-Ready)</p>
+<p>Produces questions in the format Google uses for rich results — with answers sized for snippet capture.</p>
+<div class="prompt-box">Generate a FAQ section for a blog post about "[topic]" targeting "[primary keyword]".
+
+Requirements:
+- 5-6 questions formatted exactly as people search them (question-style, not topic-style)
+- Each answer: 2-4 sentences, direct, includes secondary keywords naturally
+- Answers should be self-contained (readable as a standalone snippet in search results)
+- Include one question with a numbered answer (step-format) and one with a comparison
+
+Format each Q&A ready for FAQ schema markup:
+Q: [question]
+A: [answer]</div>
+
+<!-- GROUP 4 -->
+<div class="prompt-group-heading">🔗 Group 4: Link &amp; Authority Building</div>
+
+<p class="prompt-label"><span class="prompt-number">09</span> Internal Link Opportunity Finder</p>
+<p>Paste your draft + site article list to get a full internal linking map — one of the highest-ROI SEO tasks.</p>
+<div class="prompt-box">You are an SEO editor reviewing a blog post about "[topic]".
+
+Here is the article text: [paste article]
+
+Here are the other articles on my site: [list titles and URLs]
+
+Identify:
+1. Every place in the article where a natural internal link could be added (quote the anchor text and best destination URL)
+2. Where this article could logically receive internal links from other pages (quote the suggested anchor text and context sentence)
+3. Any sections that could link to authoritative external sources (suggest what type of source, not specific URLs)
+
+Format as a table: Section | Link Type | Anchor Text | Destination</div>
+
+<p class="prompt-label"><span class="prompt-number">10</span> Link Bait Section Generator</p>
+<p>Creates a citable, shareable section that gives journalists and bloggers a reason to reference your article.</p>
+<div class="prompt-box">I'm writing a blog post on "[topic]" and want to include one section specifically designed to earn backlinks.
+
+Write a 400-500 word section that:
+- Presents an original framework, named model, or proprietary process (name it something memorable)
+- Includes a clear visual description (I'll turn it into a graphic): describe layout/structure
+- Uses specific numbers and actionable steps (not vague advice)
+- Is citable: written in a way that journalists and bloggers would reference it
+
+The section should fit naturally within an article about [topic]. Primary keyword: [keyword].</div>
+
+<!-- GROUP 5 -->
+<div class="prompt-group-heading">✅ Group 5: Refinement &amp; Editing</div>
+
+<p class="prompt-label"><span class="prompt-number">11</span> SEO Content Auditor</p>
+<p>Paste your finished draft for a structured SEO edit — catches gaps that even experienced writers miss.</p>
+<div class="prompt-box">You are an SEO editor. Review this blog post targeting "[primary keyword]" and return a prioritized edit list.
+
+[Paste article]
+
+Audit for:
+1. Keyword placement: Is primary keyword in H1, first 100 words, at least 2 H2s, and conclusion?
+2. Search intent match: Does the intro immediately address what someone searching "[keyword]" wants to know?
+3. Thin sections: Are any H2 sections under 150 words that could be expanded?
+4. Missing subtopics: Based on the keyword, what related questions aren't answered?
+5. Readability: Flag paragraphs over 5 sentences or sentences over 25 words
+6. AEO gaps: Where could you add a direct definition, comparison table, or step-by-step list?
+
+Return as: Issue | Location | Priority (High/Medium/Low) | Suggested Fix</div>
+
+<p class="prompt-label"><span class="prompt-number">12</span> Humanization Pass</p>
+<p>The final pass that separates rankable content from generic AI output — adds voice, specificity, and readability.</p>
+<div class="prompt-box">Rewrite the following AI-generated blog section to sound like a practitioner who has actually done this work.
+
+[Paste section]
+
+Rules:
+- Add one specific, concrete example or scenario
+- Replace any phrase that could appear in any article on this topic with something specific to [industry/context]
+- Vary sentence length: include at least two sentences under 8 words
+- Remove: "it's worth noting", "in conclusion", "furthermore", "it's important to", "navigating"
+- The voice should be direct and slightly opinionated — the writer has a point of view
+
+Do not change the meaning or remove any factual claims. Flag anything you're uncertain about.</div>
+
+<!-- ============================================================ -->
+<h2 id="tools">Which AI Tool to Use for Each Prompt</h2>
+
+<p>The prompts above work across all major AI writing tools — but some tools are better suited to certain tasks. If you're evaluating tools side by side, our <a href="/articles/chatgpt-vs-jasper-seo-content-2026.html">ChatGPT vs Jasper for SEO Content: Complete Comparison 2026</a> breaks down exactly which tool handles specific SEO writing tasks better and at what price point.</p>
+
+<div class="tool-card">
+  <div class="tool-badge">Solo Creator</div>
+  <div class="tool-info">
+    <h4>ChatGPT Plus — Best for Flexible SEO Prompting</h4>
+    <p>GPT-4o follows complex multi-part instructions reliably. The web search feature (available with Plus) lets you ground research-heavy prompts in current data. Best for Prompts 1, 2, 4, 6, 7, 11, and 12. Ideal for solo creators who prompt-engineer their own workflows.</p>
+    <span class="price">$20/month · <a href="https://openai.com/chatgpt" rel="nofollow">Try ChatGPT Plus →</a></span>
+  </div>
+</div>
+
+<div class="tool-card">
+  <div class="tool-badge budget">Long-Form &amp; Editing</div>
+  <div class="tool-info">
+    <h4>Claude (Sonnet) — Best for Long-Form Drafts &amp; Audits</h4>
+    <p>Claude's longer context window handles full article drafts and large paste-in audits (Prompt 11) without losing instructions mid-way. Its default writing style is less AI-sounding than GPT-4, which means humanization passes (Prompt 12) need fewer rounds. Best for Prompts 3, 5, 10, and 12.</p>
+    <span class="price">Free (Sonnet) · $20/month Pro · <a href="https://claude.ai" rel="nofollow">Try Claude →</a></span>
+  </div>
+</div>
+
+<div class="tool-card">
+  <div class="tool-badge team">Teams &amp; High-Volume</div>
+  <div class="tool-info">
+    <h4>Jasper AI — Best for SEO-Integrated Workflows</h4>
+    <p>Jasper's native Surfer SEO integration means you can set a keyword and target word count, and the editor shows a real-time content score as you write or generate. For teams producing 20+ SEO articles/month, the structured workflow beats manual prompting. Best for Prompts 3, 5, and 6 inside a full content pipeline.</p>
+    <span class="price">$49–$99/month · <a href="https://jasper.ai?fpr=gravison" rel="nofollow">Try Jasper AI →</a></span>
+  </div>
+</div>
+
+<div class="tool-card">
+  <div class="tool-badge volume">High Volume</div>
+  <div class="tool-info">
+    <h4>Writesonic — Best for Volume + Built-in SEO Scoring</h4>
+    <p>Writesonic's Article Writer pulls real-time search data, auto-generates NLP-optimized content, and includes a basic on-page SEO scorer. Best for teams that need volume over precision — useful for content farms and niche site builders who can edit faster than they can prompt.</p>
+    <span class="price">$16–$79/month · <a href="https://writesonic.com" rel="nofollow">Try Writesonic →</a></span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <h3>Not sure which tool fits your SEO workflow?</h3>
+  <p>We tested ChatGPT, Jasper, Claude, and Writesonic on real SEO writing tasks — here's what actually ranked.</p>
+  <a href="/articles/best-ai-writing-tools-seo-content-2026.html">See the Full SEO Tools Comparison</a>
+  <a href="/articles/chatgpt-vs-jasper-seo-content-2026.html" class="secondary">ChatGPT vs Jasper Head-to-Head</a>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="keyword-rules">Keyword Integration: The 3 Rules</h2>
+
+<div class="rule-grid">
+  <div class="rule-card">
+    <span class="rule-number">1</span>
+    <h4>Early, Not Everywhere</h4>
+    <p>Keyword weight in the first 100 words outweighs density across the full article. Get it in the H1, first paragraph, and one early H2 — then use variations.</p>
+  </div>
+  <div class="rule-card">
+    <span class="rule-number">2</span>
+    <h4>Semantic Over Exact Match</h4>
+    <p>Use related terms that share search intent: synonyms, subtopics, tools, people, and processes. Surfer SEO, Clearscope, or even Google's "Related Searches" tells you what belongs.</p>
+  </div>
+  <div class="rule-card">
+    <span class="rule-number">3</span>
+    <h4>Mirror Search Language in Headings</h4>
+    <p>When someone searches "how to do X," they expect "How to do X" as an H2. Mirror the natural language of search queries — it improves both crawlability and AEO snippet capture.</p>
+  </div>
+</div>
+
+<div class="callout">
+  <strong>Pro tip:</strong> After generating your article, paste the text into a free tool like <a href="https://neilpatel.com/seo-analyzer/" rel="nofollow">Neil Patel's SEO Analyzer</a> or run a basic Surfer SEO audit. The gap report tells you exactly which semantic keywords are missing before you publish.
+</div>
+
+<!-- ============================================================ -->
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+  <h3>How do I write SEO prompts for ChatGPT?</h3>
+  <p>Start with a clear role ("You are an SEO content writer"), specify your primary keyword and where to place it, list the required subtopics, define the structure (H2s, word count, FAQ), and state what to avoid. The more specific the brief, the less editing you'll need. Use the 5-component framework above as your starting checklist.</p>
+</div>
+
+<div class="faq-item">
+  <h3>What's the difference between a regular prompt and an SEO prompt?</h3>
+  <p>Regular prompts optimize for readability and completeness. SEO prompts add keyword placement instructions, structural requirements that signal authority to crawlers, intent-matching requirements, and AEO formatting so content gets featured in AI answer engines. The result isn't just a well-written article — it's a well-written article that's engineered for discovery.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Can ChatGPT write content that ranks on Google?</h3>
+  <p>Yes — but not with generic prompts. AI-generated content ranks when it's accurately targeted to a specific search intent, covers subtopics in depth, and is edited to remove generic phrasing that appears across thousands of similar articles. Use the prompts in this guide and treat the first draft as a starting point, not the finished product.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Should I tell the AI what keywords to include?</h3>
+  <p>Yes. Explicitly listing your primary keyword, 3-4 secondary keywords, and any LSI terms gives the AI the vocabulary to produce naturally-optimized content. Without this, it will choose its own language — which may or may not match what people actually search. Semantic keyword lists (from tools like Surfer SEO or Ahrefs) are the most reliable source.</p>
+</div>
+
+<div class="faq-item">
+  <h3>How many prompts does it take to write one SEO article?</h3>
+  <p>A well-built single prompt (like Prompt 3 above) can produce a publish-ready first draft. In practice, most experienced SEO writers use 2-3 prompts per article: one for the draft, one for the FAQ section, and one humanization and editing pass. Using Prompt 1 for intent mapping before drafting reduces total revision time significantly.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Which AI tool is best for SEO blog posts?</h3>
+  <p>Jasper AI leads for teams due to native Surfer SEO integration. ChatGPT Plus is the best value for solo creators at $20/month. Claude handles long-form drafts and editing tasks well due to its large context window. The right choice depends on your volume, budget, and whether you need built-in SEO scoring or prefer manual prompt control. See our <a href="/articles/best-ai-writing-tools-seo-content-2026.html">full SEO AI tools comparison</a> for side-by-side results.</p>
+</div>
+
+</article>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p><strong>AIToolReviews.co</strong> — Independent AI tool reviews and guides.</p>
+    <p>Some links on this page are affiliate links. We may earn a commission at no extra cost to you. <a href="/about.html">About our review process →</a></p>
+    <p class="footer-links">
+      <a href="/articles/best-ai-writing-tools-seo-content-2026.html">Best AI SEO Tools</a> ·
+      <a href="/articles/chatgpt-vs-jasper-seo-content-2026.html">ChatGPT vs Jasper</a> ·
+      <a href="/articles/best-prompts-ai-blog-writing-beginners-2026.html">Beginner AI Prompts</a> ·
+      <a href="/articles/best-ai-writing-tools-blog-posts-2026.html">AI Blog Writing Tools</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
