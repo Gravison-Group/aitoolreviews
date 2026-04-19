@@ -20,7 +20,7 @@
 
   # Content Security Policy
   # Allows: same-origin scripts/styles, Google Fonts, inline styles (for hero gradients)
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 
   # HSTS — enforce HTTPS for 1 year, include subdomains
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
