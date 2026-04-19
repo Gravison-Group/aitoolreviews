@@ -326,7 +326,8 @@ footer {
   
   .nav-inner { padding: 16px 20px; }
   
-  .nav-links { gap: 20px; }
+  /* FIXED: Hide nav links — 4 items overflow at 375px, no burger button in HTML */
+  .nav-links { display: none; }
   
   .article-header { padding: 60px 0 32px; }
   
@@ -339,6 +340,11 @@ footer {
   .product-box { padding: 20px; }
   
   .footer-links { flex-direction: column; gap: 12px; }
+
+  /* FIXED: Font sizes below 14px threshold */
+  .section-label { font-size: 0.875rem; }   /* was 0.78rem = 12.5px */
+  .article-meta  { font-size: 0.875rem; }   /* was 0.85rem  = 13.6px */
+  .footer-bottom { font-size: 0.875rem; }   /* was 0.85rem  = 13.6px */
 }
 
 /* Light Presentation Refinement - Import consistency improvements */
@@ -519,4 +525,152 @@ footer {
 @media (max-width: 768px) {
   .cards { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 36px; }
+}
+
+/* ── Quick Answer Box ── */
+.quick-answer {
+  background: #f0f9ff;
+  border-left: 4px solid #2563eb;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.quick-answer strong { color: #1e40af; }
+
+/* ===== UX READABILITY POLISH (2026-04-18) ===== */
+/* Note: aitoolreviews is a LIGHT theme (--bg: #f8f9fa). Using light-bg link colors. */
+
+/* Base readability — bump from 16px/1.6 */
+body {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Comfortable reading width */
+article, .content, .page-content, main > .container {
+  max-width: 780px;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1.25em;
+}
+
+p + p {
+  margin-top: 0;
+}
+
+/* Section spacing */
+section, .section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Heading rhythm */
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Softer links — matching green accent */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-hov);
+  border-bottom-color: var(--accent-hov);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--accent-light);
+}
+
+/* FAQ sections */
+.faq-section, section:has(h2:is([id*="faq"], [id*="FAQ"])) {
+  margin-top: 3rem;
+}
+
+.faq-item, .faq-section > div {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question, .faq-item h3, .faq-item strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: inherit;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.faq-answer, .faq-item p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+h3 + p {
+  margin-top: 0.5rem;
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn, button, a.btn, .cta-btn, .card-link, [class*="btn"] {
+    min-height: 48px;
+    padding: 12px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section, .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Refined quick answer box — light theme */
+.quick-answer {
+  background: #f0f9ff;
+  border-left: 4px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }

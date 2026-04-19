@@ -83,6 +83,10 @@
 <section class="hero">
   <div class="container">
     <h1>Find the Best AI Tools for Your Workflow</h1>
+<div class="quick-answer">
+  <strong>Quick Answer:</strong> AI Tool Reviews provides independent, hands-on reviews of the best AI writing tools, chatbots, image generators, and productivity software in 2026. Every review is based on actual testing — no sponsored content, no affiliate bias.
+</div>
+
     <p>Honest, hands-on reviews and comparisons of 100+ AI tools. Updated April 2026.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
       <a href="/articles/" class="btn">Browse All Reviews</a>
@@ -185,6 +189,18 @@
         <p>Codeium's agentic IDE — Cascade flow and proactive suggestions tested for real development work.</p>
         <div class="card-meta"><span>Codeium</span><span>Updated Apr 2026</span></div>
       </a>
+      <a href="https://descript.cello.so/tN4nSr8SYoQ" class="card" rel="noopener" target="_blank" style="text-decoration:none;color:inherit;border:2px solid var(--accent,#2d6a4f);">
+        <span class="card-badge" style="background:#e63946;">⭐ Recommended</span>
+        <h3>Descript — AI Video & Podcast Editor</h3>
+        <p>Edit video by editing text. Remove filler words, clone your voice, create clips, and publish in minutes. The easiest AI video editor we've tested.</p>
+        <div class="card-meta"><span>Descript</span><span>Free plan available</span></div>
+      </a>
+      <a href="https://www.canva.com/join/pvm-dvg-thh" class="card" rel="noopener" target="_blank" style="text-decoration:none;color:inherit;border:2px solid var(--accent,#2d6a4f);">
+        <span class="card-badge" style="background:#e63946;">⭐ Recommended</span>
+        <h3>Canva — AI-Powered Design Tool</h3>
+        <p>Design anything — social posts, presentations, videos, and more — with AI magic tools built in. 100M+ users trust it. Try it free today.</p>
+        <div class="card-meta"><span>Canva</span><span>Free plan available</span></div>
+      </a>
     </div>
   </div>
 </section>
@@ -283,6 +299,14 @@
     </div>
     <div class="footer-bottom">© 2026 AIToolReviews.co — Independent AI tool reviews</div>
   </div>
+
+    <section class="related-sites" style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid #e5e7eb;">
+      <p style="font-size:0.9rem;color:#6b7280;margin-bottom:0.75rem;">Explore More</p>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:1rem;">
+        <li style="font-size:0.85rem;"><a href="https://foraithings.com" title="How AI tools help real businesses" style="color:#2563eb;text-decoration:none;">AI for Professionals</a></li>
+        <li style="font-size:0.85rem;"><a href="https://emergencyenergy.co" title="Portable power and solar generator guides" style="color:#2563eb;text-decoration:none;">Backup Power Solutions</a></li>
+      </ul>
+    </section>
 </footer>
 
 <script src="/js/main.js"></script>
@@ -295,12 +319,24 @@ document.addEventListener('DOMContentLoaded', function() {
       var originalText = btn ? btn.textContent : '';
       if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
       var data = new FormData(form);
+      var emailVal = data.get('email');
       fetch(form.action, {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
       }).then(function(res) {
         if (res.ok) {
+          // Kit: subscribe to site_aitoolreviews + interest_ai_tools
+          if (emailVal) {
+            var kitSecret = 'MNvRwzbtkrWnx5D6usjmJ7U-s5wa6Gn89-yvnz3PQRY';
+            [18984666, 18984670].forEach(function(tagId) {
+              fetch('https://api.convertkit.com/v3/tags/' + tagId + '/subscribe', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({api_secret: kitSecret, email: emailVal})
+              });
+            });
+          }
           form.innerHTML = '<p style="color:#22c55e;font-weight:600;font-size:18px;padding:12px 0;">✓ Thanks! You\'re signed up.</p>';
         } else {
           if (btn) { btn.textContent = 'Try again'; btn.disabled = false; }
