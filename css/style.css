@@ -90,8 +90,20 @@ nav {
 .article-header {
   padding: 80px 0 40px;
   text-align: center;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--accent-pale) 100%);
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #16213e 100%);
+  color: #fff;
 }
+.article-header h1,
+.article-header p,
+.article-header .quick-answer {
+  color: #fff;
+}
+.article-header .quick-answer {
+  background: rgba(255,255,255,0.1);
+  border-left-color: #81c784;
+  color: #fff;
+}
+.article-header .quick-answer strong { color: #81c784; }
 
 .section-label {
   display: inline-block;
