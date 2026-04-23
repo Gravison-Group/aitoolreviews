@@ -95,7 +95,10 @@ nav {
 }
 .article-header h1,
 .article-header p,
-.article-header .quick-answer {
+.article-header .section-label,
+.article-header .article-meta,
+.article-header .quick-answer,
+.article-header .quick-answer p {
   color: #fff;
 }
 .article-header .quick-answer {
@@ -118,7 +121,7 @@ nav {
 .article-header h1 {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
-  color: var(--heading);
+  color: #ffffff;
   max-width: 800px;
   margin: 0 auto 16px;
 }
