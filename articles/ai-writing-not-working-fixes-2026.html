@@ -16,8 +16,11 @@
 <meta property="og:title" content="AI Writing Not Working? Common Problems &amp; Fixes (2026)">
 <meta property="og:description" content="Fix blank output, rate limit errors, generation cutoffs, timeouts, and API failures. Complete troubleshooting guide for AI writing tools in 2026.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026.html">
-<link rel="canonical" href="https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026.html">
+<meta property="og:url" content="https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Writing Not Working? Common Problems &amp; Fixes (2026)">
+  <meta name="twitter:description" content="Fix blank output, rate limit errors, generation cutoffs, timeouts, and API failures. Complete troubleshooting guide for AI writing tools in 2026.">
+<link rel="canonical" href="https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026">
 <meta name="impact-site-verification" value="083f318d-45c4-4a07-a7da-f589cda5b865">
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">{
@@ -27,7 +30,7 @@
   "description": "AI writing tool not working? Fix blank output, rate limit errors, mid-sentence cutoffs, timeouts, and API failures. Complete troubleshooting guide for 2026.",
   "author": {"@type": "Organization", "name": "AIToolReviews.co"},
   "publisher": {"@type": "Organization", "name": "AIToolReviews.co"},
-  "dateModified": "2026-04-19",
+  "dateModified": "2026-04-26",
   "datePublished": "2026-04-14",
   "mainEntityOfPage": "https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026.html"
 }</script>
@@ -80,43 +83,43 @@
 <style>
   .diag-table-wrap { overflow-x: auto; margin: 1.5rem 0; }
   .diag-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
-  .diag-table th { background: #1a1a2e; color: #fff; padding: 0.65rem 0.85rem; text-align: left; }
+  .diag-table th { background:var(--bg); color:var(--text); padding: 0.65rem 0.85rem; text-align: left; }
   .diag-table td { padding: 0.6rem 0.85rem; border-bottom: 1px solid #e5e7eb; }
-  .diag-table tr:nth-child(even) td { background: #f9fafb; }
-  .problem-block { border-left: 4px solid #6366f1; background: #f5f3ff; border-radius: 0 8px 8px 0; padding: 1.1rem 1.3rem; margin: 1.8rem 0 0.6rem 0; }
-  .problem-block h2 { margin: 0 0 0.2rem 0; font-size: 1.18rem; color: #1a1a2e; }
-  .problem-num { font-size: 0.78rem; font-weight: 700; color: #6366f1; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
-  .error-box { background: #1e1e2e; color: #f8f8f2; border-radius: 6px; padding: 0.85rem 1.1rem; margin: 0.75rem 0; font-family: monospace; font-size: 0.88rem; line-height: 1.6; }
+  .diag-table tr:nth-child(even) td { background:var(--bg); }
+  .problem-block { border-left: 4px solid #6366f1; background:var(--bg); border-radius: 0 8px 8px 0; padding: 1.1rem 1.3rem; margin: 1.8rem 0 0.6rem 0; }
+  .problem-block h2 { margin: 0 0 0.2rem 0; font-size: 1.18rem; color:var(--text); }
+  .problem-num { font-size: 0.78rem; font-weight: 700; color:var(--text); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+  .error-box { background:var(--bg); color:var(--text); border-radius: 6px; padding: 0.85rem 1.1rem; margin: 0.75rem 0; font-family: monospace; font-size: 0.88rem; line-height: 1.6; }
   .steps-list { counter-reset: step-counter; list-style: none; padding: 0; margin: 0.75rem 0; }
   .steps-list li { counter-increment: step-counter; display: flex; gap: 0.75rem; padding: 0.55rem 0; border-bottom: 1px dashed #e5e7eb; }
   .steps-list li:last-child { border-bottom: none; }
-  .steps-list li::before { content: counter(step-counter); background: #6366f1; color: white; border-radius: 50%; width: 1.5rem; height: 1.5rem; min-width: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; margin-top: 0.1rem; }
-  .why-box { background: #fef9c3; border: 1px solid #fde047; border-radius: 6px; padding: 0.75rem 1rem; margin: 0.6rem 0 1rem 0; font-size: 0.93rem; }
-  .why-box strong { color: #854d0e; }
+  .steps-list li::before { content: counter(step-counter); background:var(--bg); color: white; border-radius: 50%; width: 1.5rem; height: 1.5rem; min-width: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; margin-top: 0.1rem; }
+  .why-box { background:var(--bg); border: 1px solid #fde047; border-radius: 6px; padding: 0.75rem 1rem; margin: 0.6rem 0 1rem 0; font-size: 0.93rem; }
+  .why-box strong { color:var(--text); }
   .tool-card-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-  .tool-card-mini { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; }
-  .tool-card-mini h4 { margin: 0 0 0.3rem 0; color: #1a1a2e; font-size: 1rem; }
-  .tool-card-mini .price { font-weight: 700; color: #6366f1; font-size: 0.95rem; }
-  .tool-card-mini .support { font-size: 0.82rem; color: #6b7280; margin-top: 0.3rem; }
-  .support-stars { color: #f59e0b; }
+  .tool-card-mini { background:var(--bg); border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; }
+  .tool-card-mini h4 { margin: 0 0 0.3rem 0; color:var(--text); font-size: 1rem; }
+  .tool-card-mini .price { font-weight: 700; color:var(--text); font-size: 0.95rem; }
+  .tool-card-mini .support { font-size: 0.82rem; color:var(--text); margin-top: 0.3rem; }
+  .support-stars { color:var(--text); }
   .diy-support { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin: 1.2rem 0; }
   .diy-col, .support-col { border-radius: 8px; padding: 1rem 1.2rem; }
-  .diy-col { background: #f0fdf4; border: 1px solid #86efac; }
-  .support-col { background: #fff7ed; border: 1px solid #fdba74; }
+  .diy-col { background:var(--bg); border: 1px solid #86efac; }
+  .support-col { background:var(--bg); border: 1px solid #fdba74; }
   .diy-col h3, .support-col h3 { margin: 0 0 0.6rem 0; font-size: 0.95rem; }
-  .diy-col h3 { color: #15803d; }
-  .support-col h3 { color: #c2410c; }
+  .diy-col h3 { color:var(--text); }
+  .support-col h3 { color:var(--text); }
   .diy-col ul, .support-col ul { margin: 0; padding-left: 1.2rem; font-size: 0.9rem; }
   .diy-col li, .support-col li { margin-bottom: 0.35rem; }
   .faq-item { border-bottom: 1px solid #e5e7eb; padding: 1rem 0; }
   .faq-item:last-child { border-bottom: none; }
-  .faq-q { font-weight: 700; color: #1a1a2e; margin-bottom: 0.4rem; font-size: 0.97rem; }
-  .faq-a { color: #374151; font-size: 0.93rem; line-height: 1.6; }
-  .scope-note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 0.85rem 1.1rem; margin: 1rem 0 1.8rem 0; font-size: 0.93rem; color: #1e40af; }
-  .tldr-box { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%); color: #fff; border-radius: 12px; padding: 1.5rem 1.8rem; margin: 2rem 0; }
-  .tldr-box h2 { color: #c4b5fd; margin-top: 0; }
+  .faq-q { font-weight: 700; color:var(--text); margin-bottom: 0.4rem; font-size: 0.97rem; }
+  .faq-a { color:var(--text); font-size: 0.93rem; line-height: 1.6; }
+  .scope-note { background:var(--bg); border: 1px solid #bfdbfe; border-radius: 8px; padding: 0.85rem 1.1rem; margin: 1rem 0 1.8rem 0; font-size: 0.93rem; color:var(--text); }
+  .tldr-box { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%); color:var(--text); border-radius: 12px; padding: 1.5rem 1.8rem; margin: 2rem 0; }
+  .tldr-box h2 { color:var(--text); margin-top: 0; }
   .tldr-box ul { margin: 0; padding-left: 1.3rem; }
-  .tldr-box li { margin-bottom: 0.4rem; color: #e9d5ff; font-size: 0.94rem; }
+  .tldr-box li { margin-bottom: 0.4rem; color:var(--text); font-size: 0.94rem; }
   @media (max-width: 640px) {
     .diy-support { grid-template-columns: 1fr; }
   }
@@ -126,6 +129,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <script defer data-domain="aitoolreviews.co" src="https://plausible.io/js/script.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"AI Tool Reviews","item":"https://aitoolreviews.co/"},
+  {"@type":"ListItem","position":2,"name":"Reviews","item":"https://aitoolreviews.co/articles/"},
+  {"@type":"ListItem","position":3,"name":"AI Writing Not Working? Common Problems &amp; Fixes (2026) | AIToolReviews.co","item":"https://aitoolreviews.co/articles/ai-writing-not-working-fixes-2026"}
+]}
+</script>
 </head>
 <body>
 <nav>
@@ -158,30 +168,51 @@
 
   <!-- QUICK ANSWER SECTION (Enhanced with trust signals) -->
   <div class="quick-answer" style="background: #f0fdf4; border: 1px solid #86efac; padding: 20px; border-radius: 8px; margin: 20px 0;">
-    <h2 style="color: #15803d; margin-top: 0;">⏱ Quick Answer (30-Second Fix)</h2>
+      <nav class="table-of-contents" style="position:static !important;margin:1.5rem 0 2rem;padding:1.2rem 1.5rem;border-radius:8px;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);">
+    <strong style="display:block;margin-bottom:0.6rem;font-size:1.05rem;">📋 Table of Contents</strong>
+    <ol style="margin:0;padding-left:1.4rem;line-height:1.8;">
+    <li><a href="#quick-answer-30-second-fix">⏱ Quick Answer (30-Second Fix)</a></li>
+    <li><a href="#quick-diagnosis-find-your-problem">Quick Diagnosis: Find Your Problem</a></li>
+    <li><a href="#ai-generates-blank-or-empty-output">AI Generates Blank or Empty Output</a></li>
+    <li><a href="#rate-limit-exceeded-error">"Rate Limit Exceeded" Error</a></li>
+    <li><a href="#generation-stops-mid-sentence">Generation Stops Mid-Sentence</a></li>
+    <li><a href="#spinning-loader-no-response-timeout">Spinning Loader / No Response (Timeout)</a></li>
+    <li><a href="#content-policy-or-safety-filter-refusal">"Content Policy" or Safety Filter Refusal</a></li>
+    <li><a href="#login-errors-cant-access-your-account">Login Errors / Can't Access Your Account</a></li>
+    <li><a href="#output-in-the-wrong-language">Output in the Wrong Language</a></li>
+    <li><a href="#repetitive-or-duplicate-content-within-the-same-output">Repetitive or Duplicate Content Within the Same Output</a></li>
+    <li><a href="#extremely-slow-generation">Extremely Slow Generation</a></li>
+    <li><a href="#api-integration-not-working">API Integration Not Working</a></li>
+    <li><a href="#prevention-how-to-avoid-these-problems-in-the-first-place">Prevention: How to Avoid These Problems in the First Place</a></li>
+    <li><a href="#when-to-fix-it-yourself-vs-contact-support">When to Fix It Yourself vs. Contact Support</a></li>
+    <li><a href="#the-bottom-line">The Bottom Line</a></li>
+    </ol>
+  </nav>
+
+  <h2 style="color:var(--muted, #8892b0); margin-top: 0;" id="quick-answer-30-second-fix">⏱ Quick Answer (30-Second Fix)</h2>
     <p><strong>If your AI writing tool isn't working right now, follow this checklist:</strong></p>
     
     <!-- ENHANCED CHECKLIST WITH EXPECTED OUTCOMES -->
     <div style="margin: 15px 0 20px 0;">
       <div style="margin-bottom: 12px; padding-left: 5px; border-left: 3px solid #86efac;">
         <strong>1. Refresh + clear cache:</strong> Ctrl+Shift+Delete → select "Cached images and files"<br>
-        <span style="color: #15803d; font-size: 0.9em;">✅ <em>Expected:</em> Page reloads cleanly, any stuck loaders reset</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected:</em> Page reloads cleanly, any stuck loaders reset</span>
       </div>
       <div style="margin-bottom: 12px; padding-left: 5px; border-left: 3px solid #86efac;">
         <strong>2. Check status page:</strong> OpenAI: status.openai.com | Jasper: status.jasper.ai<br>
-        <span style="color: #15803d; font-size: 0.9em;">✅ <em>Expected:</em> Confirm if outage is tool-wide or just your account</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected:</em> Confirm if outage is tool-wide or just your account</span>
       </div>
       <div style="margin-bottom: 12px; padding-left: 5px; border-left: 3px solid #86efac;">
         <strong>3. Try incognito mode:</strong> Ctrl+Shift+N (Chrome) or Ctrl+Shift+P (Firefox)<br>
-        <span style="color: #15803d; font-size: 0.9em;">✅ <em>Expected:</em> Rules out browser extension conflicts immediately</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected:</em> Rules out browser extension conflicts immediately</span>
       </div>
       <div style="margin-bottom: 12px; padding-left: 5px; border-left: 3px solid #86efac;">
         <strong>4. Verify account status:</strong> Check billing dashboard for payment issues<br>
-        <span style="color: #15803d; font-size: 0.9em;">✅ <em>Expected:</em> Confirm subscription is active, no payment failures</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected:</em> Confirm subscription is active, no payment failures</span>
       </div>
       <div style="margin-bottom: 12px; padding-left: 5px; border-left: 3px solid #86efac;">
         <strong>5. Reduce prompt length:</strong> Keep under 500 words for testing<br>
-        <span style="color: #15803d; font-size: 0.9em;">✅ <em>Expected:</em> Eliminates token limit issues causing blank output</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected:</em> Eliminates token limit issues causing blank output</span>
       </div>
     </div>
     
@@ -209,7 +240,7 @@
   </div>
 
   <!-- Quick Diagnosis Table -->
-  <h2>Quick Diagnosis: Find Your Problem</h2>
+  <h2 id="quick-diagnosis-find-your-problem">Quick Diagnosis: Find Your Problem</h2>
   <div class="diag-table-wrap">
     <table class="diag-table">
       <thead>
@@ -237,35 +268,37 @@
   <!-- Problem 1 -->
   <div class="problem-block" id="p1">
     <div class="problem-num">Problem #1</div>
-    <h2>AI Generates Blank or Empty Output</h2>
+    <h2 id="ai-generates-blank-or-empty-output">AI Generates Blank or Empty Output</h2>
   </div>
 
   <!-- ENHANCED QUICK FIX SECTION (Checklist style with trust signals) -->
   <div class="quick-fix-enhanced" style="background: #fef3c7; border: 1px solid #fde047; padding: 15px; border-radius: 5px; margin: 15px 0;">
-    <h3 style="color: #854d0e; margin-top: 0;">⚡ Quick Fix Checklist</h3>
+    <h3 style="color:var(--muted, #8892b0); margin-top: 0;">⚡ Quick Fix Checklist</h3>
     
     <!-- STEP-BY-STEP CHECKLIST WITH EXPECTED OUTCOMES -->
     <div style="margin: 10px 0 15px 0;">
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>1. Test with simple prompt:</strong> Type "Write one sentence about dogs"<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Tool generates a sentence about dogs within 10 seconds</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Tool generates a sentence about dogs within 10 seconds</span>
       </div>
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>2. Shorten your prompt:</strong> Reduce to under 500 words<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Generation starts immediately (no more blank output)</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Generation starts immediately (no more blank output)</span>
       </div>
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>3. Make task explicit:</strong> Be specific about what you want<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Relevant, on-topic output matches your request</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Relevant, on-topic output matches your request</span>
       </div>
     </div>
     
     <!-- FALLBACK GUIDANCE -->
     <div style="background: #fff7ed; border: 1px solid #fdba74; padding: 10px; border-radius: 4px; margin-top: 10px;">
       <p style="margin: 0; font-size: 0.95em;"><strong>🔁 If this doesn't work:</strong> Clear browser cache completely (Ctrl+Shift+Delete → select "All time") and restart browser. <em>This resolves 80% of persistent blank output issues.</em></p>
-    </div>
-    
-    <p style="margin: 10px 0 0 0; font-size: 0.9em; color: #666;"><strong>Success indicator:</strong> AI tool generates complete response. <strong>If still stuck:</strong> Continue with detailed troubleshooting below.</p>
+    <figure class="article-hero-image" style="margin:0 0 1.5em 0;text-align:center;">
+<img src="../images/ai-writing-not-working-fixes-2026.jpg" alt="AI Writing Not Working? Common Problems &amp; Fixes (2026)" loading="lazy" style="width:100%;max-width:800px;height:auto;border-radius:8px;">
+<figcaption style="color:var(--muted, #8892b0);font-size:0.78em;text-align:center;margin-top:4px;">Photo: <a href="https://www.pexels.com/photo/close-up-shot-of-a-typewriter-4604607/" rel="nofollow" target="_blank" style="color:inherit;">Markus Winkler</a> / Pexels</figcaption>
+</figure>
+    <p style="margin: 10px 0 0 0; font-size: 0.9em; color:var(--muted, #8892b0);"><strong>Success indicator:</strong> AI tool generates complete response. <strong>If still stuck:</strong> Continue with detailed troubleshooting below.</p>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> Prompt too vague or too long, conflicting instructions, or a silent content filter block — the model gets nothing usable to work with.</div>
@@ -273,31 +306,31 @@
   <ol class="steps-list">
     <li>
       <strong>Shorten your prompt.</strong> If it's over 500 words, cut it in half. Keep only essential context and the core task.
-      <div style="color: #15803d; font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
+      <div style="color:var(--muted, #8892b0); font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
         ✅ <em>This should resolve:</em> Token limit issues causing blank output
       </div>
     </li>
     <li>
       <strong>Make the task explicit.</strong> Replace "write something about productivity" with "Write a 200-word blog intro about time-blocking for remote workers."
-      <div style="color: #15803d; font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
+      <div style="color:var(--muted, #8892b0); font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
         ✅ <em>This should resolve:</em> Vague prompt issues where AI doesn't know what to generate
       </div>
     </li>
     <li>
       <strong>Remove special characters.</strong> Angle brackets <code>&lt; &gt;</code>, curly braces <code>{ }</code>, and inline code snippets in prompts can confuse parsers.
-      <div style="color: #15803d; font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
+      <div style="color:var(--muted, #8892b0); font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
         ✅ <em>This should resolve:</em> Parser errors that cause generation to fail
       </div>
     </li>
     <li>
       <strong>Test with a dead-simple prompt.</strong> Type: <em>"Write one sentence about dogs."</em> If that works, your original prompt is the problem.
-      <div style="color: #15803d; font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
+      <div style="color:var(--muted, #8892b0); font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
         ✅ <em>Expected outcome:</em> Confirms whether the issue is prompt-specific or tool-wide
       </div>
     </li>
     <li>
       <strong>Check input limits.</strong> ChatGPT Plus accepts ~4,000 words input; Jasper ~3,000 tokens; Writesonic ~2,000 characters per field. Exceeding these causes silent failures.
-      <div style="color: #15803d; font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
+      <div style="color:var(--muted, #8892b0); font-size: 0.9em; margin-top: 5px; padding-left: 5px; border-left: 2px solid #86efac;">
         ✅ <em>This should resolve:</em> Input length issues that cause generation to fail silently
       </div>
     </li>
@@ -306,26 +339,26 @@
   <!-- Problem 2 -->
   <div class="problem-block" id="p2">
     <div class="problem-num">Problem #2</div>
-    <h2>"Rate Limit Exceeded" Error</h2>
+    <h2 id="rate-limit-exceeded-error">"Rate Limit Exceeded" Error</h2>
   </div>
 
   <!-- ENHANCED QUICK FIX SECTION (Checklist style with trust signals) -->
   <div class="quick-fix-enhanced" style="background: #fef3c7; border: 1px solid #fde047; padding: 15px; border-radius: 5px; margin: 15px 0;">
-    <h3 style="color: #854d0e; margin-top: 0;">⚡ Quick Fix Checklist</h3>
+    <h3 style="color:var(--muted, #8892b0); margin-top: 0;">⚡ Quick Fix Checklist</h3>
     
     <!-- STEP-BY-STEP CHECKLIST WITH EXPECTED OUTCOMES -->
     <div style="margin: 10px 0 15px 0;">
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>1. Wait 60 seconds:</strong> Set timer, don't retry immediately<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Rate limit resets, next request works</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Rate limit resets, next request works</span>
       </div>
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>2. Check plan limits:</strong> Account dashboard → Usage/Quota section<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Confirm if you've hit daily/monthly limits</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Confirm if you've hit daily/monthly limits</span>
       </div>
       <div style="margin-bottom: 10px; padding: 8px 10px; background: rgba(255,255,255,0.7); border-radius: 4px;">
         <strong>3. Space out requests:</strong> Add 5-second delays between generations<br>
-        <span style="color: #854d0e; font-size: 0.9em;">✅ <em>Expected outcome:</em> Avoid hitting per-minute rate limits</span>
+        <span style="color:var(--muted, #8892b0); font-size: 0.9em;">✅ <em>Expected outcome:</em> Avoid hitting per-minute rate limits</span>
       </div>
     </div>
     
@@ -334,7 +367,7 @@
       <p style="margin: 0; font-size: 0.95em;"><strong>🔁 If this doesn't work:</strong> Switch to a different AI tool temporarily (Claude often has capacity when OpenAI tools are congested). <em>This bypasses rate limits entirely.</em></p>
     </div>
     
-    <p style="margin: 10px 0 0 0; font-size: 0.9em; color: #666;"><strong>Success indicator:</strong> Error 429 disappears, generations complete normally. <strong>If limits persist:</strong> Consider upgrading your plan (see detailed steps below).</p>
+    <p style="margin: 10px 0 0 0; font-size: 0.9em; color:var(--muted, #8892b0);"><strong>Success indicator:</strong> Error 429 disappears, generations complete normally. <strong>If limits persist:</strong> Consider upgrading your plan (see detailed steps below).</p>
   </div>
 
   <div class="error-box">
@@ -356,7 +389,7 @@
   <!-- Problem 3 -->
   <div class="problem-block" id="p3">
     <div class="problem-num">Problem #3</div>
-    <h2>Generation Stops Mid-Sentence</h2>
+    <h2 id="generation-stops-mid-sentence">Generation Stops Mid-Sentence</h2>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> Every AI writing tool has an <strong>output token limit</strong> — a cap on how much text it generates in a single response. ChatGPT 3.5 caps at ~2,000 words output. Jasper and similar tools often limit single generations to 500–800 words. When you hit the cap, output stops — sometimes mid-word.</div>
@@ -371,7 +404,15 @@
   <!-- Problem 4 -->
   <div class="problem-block" id="p4">
     <div class="problem-num">Problem #4</div>
-    <h2>Spinning Loader / No Response (Timeout)</h2>
+    
+    
+    <figure style="margin:2em 0;text-align:center;">
+      <img src="https://images.pexels.com/photos/16129724/pexels-photo-16129724.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Software developer typing code on dual monitors at a wooden desk." loading="lazy" style="width:100%;max-width:800px;height:auto;border-radius:8px;">
+      <figcaption style="color:var(--muted, #888);font-size:0.85rem;margin-top:0.5em;">Photo by Lisa from Pexels / Pexels</figcaption>
+    </figure>
+
+
+    <h2 id="spinning-loader-no-response-timeout">Spinning Loader / No Response (Timeout)</h2>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> Server overload during peak hours, a dropped internet connection mid-request, or an overly complex prompt that exceeds the server's processing timeout.</div>
@@ -387,7 +428,7 @@
   <!-- Problem 5 -->
   <div class="problem-block" id="p5">
     <div class="problem-num">Problem #5</div>
-    <h2>"Content Policy" or Safety Filter Refusal</h2>
+    <h2 id="content-policy-or-safety-filter-refusal">"Content Policy" or Safety Filter Refusal</h2>
   </div>
 
   <div class="error-box">
@@ -409,7 +450,7 @@
   <!-- Problem 6 -->
   <div class="problem-block" id="p6">
     <div class="problem-num">Problem #6</div>
-    <h2>Login Errors / Can't Access Your Account</h2>
+    <h2 id="login-errors-cant-access-your-account">Login Errors / Can't Access Your Account</h2>
   </div>
 
   <div class="error-box">
@@ -429,7 +470,7 @@
   <!-- Problem 7 -->
   <div class="problem-block" id="p7">
     <div class="problem-num">Problem #7</div>
-    <h2>Output in the Wrong Language</h2>
+    <h2 id="output-in-the-wrong-language">Output in the Wrong Language</h2>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> Many AI tools auto-detect the "dominant language" of your current document or previous content. If your workspace had prior content in another language, the model inherits that context and continues in it.</div>
@@ -443,7 +484,7 @@
   <!-- Problem 8 -->
   <div class="problem-block" id="p8">
     <div class="problem-num">Problem #8</div>
-    <h2>Repetitive or Duplicate Content Within the Same Output</h2>
+    <h2 id="repetitive-or-duplicate-content-within-the-same-output">Repetitive or Duplicate Content Within the Same Output</h2>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> <strong>Context window overflow.</strong> When you've been in the same chat or document session for a long time, the AI's context window fills up. Older content gets pushed out, the model loses track of what it already covered, and starts repeating earlier sections or ideas.</div>
@@ -458,7 +499,15 @@
   <!-- Problem 9 -->
   <div class="problem-block" id="p9">
     <div class="problem-num">Problem #9</div>
-    <h2>Extremely Slow Generation</h2>
+    
+    
+    <figure style="margin:2em 0;text-align:center;">
+      <img src="https://images.pexels.com/photos/5483071/pexels-photo-5483071.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A person typing code on a laptop with a focus on cybersecurity and software development." loading="lazy" style="width:100%;max-width:800px;height:auto;border-radius:8px;">
+      <figcaption style="color:var(--muted, #888);font-size:0.85rem;margin-top:0.5em;">Photo by cottonbro studio / Pexels</figcaption>
+    </figure>
+
+
+    <h2 id="extremely-slow-generation">Extremely Slow Generation</h2>
   </div>
 
   <div class="why-box"><strong>Why it happens:</strong> Peak server load (weekday business hours), your plan routing to a slower/older model, or long input prompts requiring more processing time before generation begins.</div>
@@ -474,7 +523,7 @@
   <!-- Problem 10 -->
   <div class="problem-block" id="p10">
     <div class="problem-num">Problem #10</div>
-    <h2>API Integration Not Working</h2>
+    <h2 id="api-integration-not-working">API Integration Not Working</h2>
   </div>
 
   <div class="error-box">
@@ -492,7 +541,7 @@
   </ol>
 
   <!-- Prevention -->
-  <h2>Prevention: How to Avoid These Problems in the First Place</h2>
+  <h2 id="prevention-how-to-avoid-these-problems-in-the-first-place">Prevention: How to Avoid These Problems in the First Place</h2>
 
   <h3>1. Choose Tools With Strong Uptime Records</h3>
   <p>Before committing to any AI writing tool, check: Does it have a public status page? Does it offer an SLA on paid plans? What do users say on Reddit and ProductHunt about reliability? Tools that don't publish uptime data are a risk for professional workflows.</p>
@@ -506,28 +555,28 @@
       <p>Best for long-form content and teams. Dedicated long-form editor with strong uptime history.</p>
       <div class="price">From $39/mo</div>
       <div class="support"><span class="support-stars">★★★★★</span> Live chat + email support</div>
-      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:#6366f1;">See full review →</a>
+      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:var(--muted, #8892b0);">See full review →</a>
     </div>
     <div class="tool-card-mini">
       <h4>⚡ Writesonic</h4>
       <p>Best for speed and volume. Reliable for SEO content with a responsive support community.</p>
       <div class="price">From $16/mo</div>
       <div class="support"><span class="support-stars">★★★★☆</span> Email + Discord community</div>
-      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:#6366f1;">See full review →</a>
+      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:var(--muted, #8892b0);">See full review →</a>
     </div>
     <div class="tool-card-mini">
       <h4>✍️ Copy.ai</h4>
       <p>Best for short-form and marketing copy. Stable platform with consistent availability.</p>
       <div class="price">From $36/mo</div>
       <div class="support"><span class="support-stars">★★★★☆</span> Email + help docs</div>
-      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:#6366f1;">See full review →</a>
+      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:var(--muted, #8892b0);">See full review →</a>
     </div>
     <div class="tool-card-mini">
       <h4>🧠 Claude</h4>
       <p>Best for complex reasoning and long documents. Often available when OpenAI tools are congested.</p>
       <div class="price">Free / $20/mo Pro</div>
       <div class="support"><span class="support-stars">★★★★☆</span> Email support</div>
-      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:#6366f1;">See full review →</a>
+      <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" class="cta-link" style="display:inline-block;margin-top:0.5rem;font-size:0.83rem;color:var(--muted, #8892b0);">See full review →</a>
     </div>
   </div>
 
@@ -540,7 +589,7 @@
   <p>Check your usage halfway through each billing month — most tools show this in Account Settings. Catching a limit early prevents workflow disruptions mid-project. Set a calendar reminder if needed.</p>
 
   <!-- DIY vs Support -->
-  <h2>When to Fix It Yourself vs. Contact Support</h2>
+  <h2 id="when-to-fix-it-yourself-vs-contact-support">When to Fix It Yourself vs. Contact Support</h2>
 
   <div class="diy-support">
     <div class="diy-col">
@@ -575,7 +624,7 @@
   </ul>
 
   <!-- FAQ -->
-  <h2>Frequently Asked Questions</h2>
+  <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
   <div class="faq-item">
     <div class="faq-q">Why is my AI writing tool suddenly not working today?</div>
@@ -609,7 +658,7 @@
 
   <!-- Bottom Line -->
   <div class="tldr-box">
-    <h2>The Bottom Line</h2>
+    <h2 id="the-bottom-line">The Bottom Line</h2>
     <p>Technical problems with AI writing tools are frustrating — especially mid-project. The good news: 90% of issues resolve in under 10 minutes with the right checklist.</p>
     <ul>
       <li><strong>Blank output</strong> → simplify your prompt and check input limits</li>
@@ -619,7 +668,7 @@
       <li><strong>API failures</strong> → regenerate key, verify billing, confirm model name</li>
       <li><strong>Persistent issues</strong> → check billing and status page before filing a ticket</li>
     </ul>
-    <p style="margin-bottom:0;">If you're hitting these problems repeatedly, it may be time to switch to a more reliable option. Our <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" style="color:#c4b5fd;"><strong>Best AI Writing Tools 2026 guide →</strong></a> ranks tools on uptime, support quality, and consistency — factors that matter just as much as output quality in a real workflow.</p>
+    <p style="margin-bottom:0;">If you're hitting these problems repeatedly, it may be time to switch to a more reliable option. Our <a href="/articles/best-ai-writing-tools-2026-complete-guide.html" style="color:var(--muted, #8892b0);"><strong>Best AI Writing Tools 2026 guide →</strong></a> ranks tools on uptime, support quality, and consistency — factors that matter just as much as output quality in a real workflow.</p>
   </div>
 
   <div class="article-footer-nav">
@@ -664,6 +713,42 @@
 
 </div><!-- /container -->
 
+<section class="product-cta" style="margin:32px 0;padding:24px;background:var(--bg-alt,#f8fafc);border-radius:8px;border:1px solid var(--border,#e2e8f0);">
+  <h3 style="margin:0 0 16px;font-size:1.1rem;">Recommended Products</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+    <li><a href="https://amazon.com/s?k=AI+productivity+tools+book+guide&tag=ggref-20" rel="nofollow sponsored" target="_blank" style="color:var(--primary,#0f766e);font-weight:600;">→ Shop Ai Productivity Tools Book Guide on Amazon</a></li>
+    <li><a href="https://amazon.com/s?k=productivity+planner+notebook+2026&tag=ggref-20" rel="nofollow sponsored" target="_blank" style="color:var(--primary,#0f766e);font-weight:600;">→ Shop Productivity Planner Notebook 2026 on Amazon</a></li>
+    <li><a href="https://amazon.com/s?k=mechanical+keyboard+productivity+home+office&tag=ggref-20" rel="nofollow sponsored" target="_blank" style="color:var(--primary,#0f766e);font-weight:600;">→ Shop Mechanical Keyboard Productivity Home Office on Amazon</a></li>
+  </ul>
+</section>
+
+  <div class="email-signup" style="margin:2.5rem 0;padding:1.5rem;background:var(--mid,#1a2d1a);border:1px solid var(--accent,#4caf50);border-radius:8px;">
+    <p style="margin:0 0 0.5rem;font-weight:700;font-size:1.1rem;">Get weekly guides from AI Tool Reviews</p>
+    <p style="margin:0 0 1rem;font-size:0.9rem;opacity:0.8;">No spam. Unsubscribe anytime.</p>
+    <form id="kit-form" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+      <input type="email" id="kit-email" placeholder="you@email.com" required
+        style="flex:1;min-width:200px;padding:0.6rem 1rem;border:1px solid var(--accent,#4caf50);border-radius:4px;background:var(--deep,#0f1a0f);color:var(--text,#d4e8d4);font-size:1rem;">
+      <button type="submit"
+        style="padding:0.6rem 1.4rem;background:var(--accent,#4caf50);color:var(--muted, #8892b0);border:none;border-radius:4px;font-weight:700;cursor:pointer;font-size:1rem;">Subscribe</button>
+    </form>
+    <p id="kit-msg" style="margin:0.5rem 0 0;font-size:0.85rem;display:none;"></p>
+  </div>
+  <script>
+  document.getElementById('kit-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('kit-email').value;
+    var msg=document.getElementById('kit-msg');
+    fetch('https://api.convertkit.com/v3/forms/subscribe',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({api_key:'MNvRwzbtkrWnx5D6usjmJ7U-s5wa6Gn89-yvnz3PQRY',email:email,tags:[18984666, 18984670]})
+    }).then(function(r){return r.json();}).then(function(){
+      msg.textContent='✅ You're in!';msg.style.display='block';msg.style.color='var(--accent,#4caf50)';
+      document.getElementById('kit-form').style.display='none';
+    }).catch(function(){
+      msg.textContent='Something went wrong. Try again.';msg.style.display='block';msg.style.color='#f87171';
+    });
+  });
+  </script>
 <footer>
   <div class="container footer-inner">
     <p class="footer-logo">🤖 AIToolReviews.co</p>
@@ -686,5 +771,50 @@
     </section>
 </footer>
 
+<script>
+(function(){
+  var D=[{s:"ai-prompts-email-marketing-campaigns-convert-2026",t:"AI Prompts for Email Marketing Campaigns That Convert (2026)"},{s:"ai-prompts-product-descriptions-convert-2026",t:"Ai Prompts Product Descriptions Convert 2026"},{s:"ai-writing-lacks-human-touch-how-to-fix-2026",t:"AI Writing Lacks Human Touch: How to Fix It (2026 Guide) - AIToolReviews.co"},{s:"ai-writing-lacks-personality-fix-2026",t:"AI Writing Lacks Personality? How to Fix It (2026) | AIToolReviews.co"},{s:"ai-writing-not-working-fixes-2026",t:"AI Writing Not Working? Common Problems &amp; Fixes (2026) | AIToolReviews.co"},{s:"ai-writing-too-generic-add-unique-voice-2026",t:"AI Writing Too Generic? How to Add Unique Voice (2026) | AIToolReviews.co"},{s:"ai-writing-tool-not-generating-content-troubleshooting-2026",t:"AI Writing Tool Not Generating Content? Complete Troubleshooting Guide (2026) - AIToolReviews.co"},{s:"anyword-review-2026",t:"Anyword Review 2026: The Data-Driven AI Copywriter That Predicts Performance"},{s:"best-ai-automation-tools-2026",t:"Best AI Automation Tools 2026: Top 8 for Workflow Automation"},{s:"best-ai-chatbots-2026",t:"Best AI Chatbots 2026: Top 9 Ranked & Compared"},{s:"best-ai-copywriting-tools-2026",t:"Best AI Copywriting Tools in 2026: Jasper vs Copy.ai vs Writesonic vs ChatGPT vs AdCreative.ai | AIToolReviews.co"},{s:"best-ai-image-generators-2026",t:"Best AI Image Generators 2026: Top 9 Ranked & Compared"},{s:"best-ai-seo-tools-2026",t:"Best AI SEO Tools 2026: Top 8 for Ranking Higher"},{s:"best-ai-tools-for-small-business-2026",t:"10 Best AI Tools for Small Business in 2026"},{s:"best-ai-video-tools-2026",t:"Best AI Video Tools 2026: Top 8 for Creating & Editing"},{s:"best-ai-writing-tool-long-form-content-2026",t:"Best AI Writing Tool for Long-Form Content 2026: Complete Comparison"},{s:"best-ai-writing-tools-2026-complete-guide",t:"Best AI Writing Tools 2026: Complete Guide & Comparison | AIToolReviews.co"},{s:"best-ai-writing-tools-2026",t:"Best AI Writing Tools 2026: Top 10 Ranked & Reviewed"},{s:"best-ai-writing-tools-blog-posts-2026",t:"Best AI Writing Tools for Blog Posts 2026: Complete Guide | AIToolReviews.co"},{s:"best-ai-writing-tools-brand-voice-2026",t:"Best AI Writing Tools for Brand Voice 2026 | AIToolReviews.co"},{s:"best-ai-writing-tools-seo-content-2026",t:"Best AI Writing Tools for SEO Content 2026: Complete Guide | AIToolReviews.co"},{s:"best-expense-management-software-2026",t:"Best AI Expense Management Software 2026: Automate Receipts & Reports - AIToolReviews.co"},{s:"best-expense-software-for-small-teams",t:"Best Expense Software for Small Teams (Under 10 Employees) 2026"},{s:"best-free-ai-tools-2026",t:"Best Free AI Tools in 2026: Complete Guide"},{s:"best-free-ai-writing-tools-2026",t:"7 Best Free AI Writing Tools in 2026 (No Credit Card Required)"},{s:"best-mcp-servers-2026",t:"Best MCP Servers for AI Agents (Ranked)"},{s:"best-prompts-ai-blog-writing-beginners-2026",t:"Best Prompts for AI Blog Writing Beginners 2026 | AIToolReviews.co"},{s:"chatgpt-prompts-seo-blog-posts-2026",t:"ChatGPT Prompts for SEO Blog Posts That Rank (2026) | AIToolReviews.co"},{s:"chatgpt-vs-claude-blog-writing-2026",t:"ChatGPT vs Claude for Blog Writing: Which is Better? (2026) | AIToolReviews.co"},{s:"chatgpt-vs-jasper-seo-content-2026",t:"ChatGPT vs Jasper for SEO Content: Complete Comparison (2026) | AIToolReviews.co"},{s:"claude-vs-gpt-vs-gemini-2026",t:"Claude vs GPT vs Gemini: Which LLM Should You Use in 2026?"},{s:"clearscope-review-2026",t:"Clearscope Review 2026: The Cleanest Content Optimizer (But Is It Worth $129/mo?)"},{s:"copy-ai-review-2026",t:"Copy.ai Review 2026: Best Free AI Writer for Startups?"},{s:"copyai-vs-writesonic-product-descriptions-2026",t:"Copyai Vs Writesonic Product Descriptions 2026"},{s:"expensify-vs-quickbooks-expense-management",t:"Expensify vs QuickBooks for Expense Management 2026: Which Stops More Errors?"},{s:"frase-review-2026",t:"Frase Review 2026: The All-in-One SEO Content Platform That Tracks AI Search Visibility"},{s:"how-to-make-money-with-ai-writing-tools-2026",t:"How to Make Money with AI Writing Tools (2026 Guide) - AIToolReviews.co"},{s:"how-to-stop-employees-submitting-bad-expense-reports",t:"How to Stop Employees Submitting Bad Expense Reports: 5 Prevention Strategies"},{s:"jasper-ai-review-2026",t:"Jasper AI Review 2026: Is It Worth $49/Month?"},{s:"jasper-vs-copyai-vs-writesonic-comparison",t:"Jasper vs Copy.ai vs Writesonic: Complete Comparison 2026 | AIToolReviews.co"},{s:"marketmuse-review-2026",t:"MarketMuse Review 2026: Is It Worth the Premium Price?"},{s:"notion-ai-review-2026",t:"Notion AI Review 2026: Is the $10/Month Add-On Worth It?"},{s:"openclaw-review-2026",t:"OpenClaw Review 2026: The Best Open-Source AI Agent Platform?"},{s:"rytr-review-2026",t:"Rytr Review 2026: The Budget AI Writer Worth $9/Month?"},{s:"step-by-step-build-ai-powered-blog-2026",t:"Step-by-Step: Build an AI-Powered Blog in 2026 - AIToolReviews.co"},{s:"stripe-dunning-tools-compared",t:"Stripe Dunning Tools Compared: DunningBee vs Churnkey vs Churn Buster"},{s:"surfer-seo-review-2026",t:"Surfer SEO Review 2026: Does It Actually Improve Rankings?"},{s:"surfer-seo-vs-marketmuse-2026",t:"Surfer SEO vs MarketMuse 2026: Which Content Tool Wins?"},{s:"why-ai-writing-sounds-robotic-fix-2026",t:"Why Does AI Writing Sound Robotic? How to Fix It (2026) | AIToolReviews.co"},{s:"writesonic-review-2026",t:"Writesonic Review 2026: Best AI Writer for SEO Content?"},{s:"writesonic-vs-jasper-2026",t:"Writesonic vs Jasper 2026: Which AI Writer Wins?"}];
+  function init(){
+    var nav=document.querySelector('.nav-inner');
+    if(!nav||document.getElementById('ns-toggle'))return;
+    var wrap=document.createElement('div');
+    wrap.className='nav-search';
+    wrap.innerHTML='<button class="nav-search-toggle" id="ns-toggle" aria-label="Search">&#128269;</button><div class="nav-search-box" id="ns-box"><input type="search" id="ns-input" placeholder="Search guides…" autocomplete="off"><button id="ns-close" aria-label="Close">✕</button></div><div class="nav-search-dropdown" id="ns-drop"></div>';
+    nav.appendChild(wrap);
+    var tog=document.getElementById('ns-toggle');
+    var box=document.getElementById('ns-box');
+    var inp=document.getElementById('ns-input');
+    var drop=document.getElementById('ns-drop');
+    var cls=document.getElementById('ns-close');
+    var idx=-1;
+    function open(){box.classList.add('open');setTimeout(function(){inp.focus();},50);}
+    function close(){box.classList.remove('open');drop.style.display='none';inp.value='';idx=-1;}
+    function show(q){
+      if(!q||q.length<2){drop.style.display='none';return;}
+      var ql=q.toLowerCase();
+      var hits=D.filter(function(a){return a.t.toLowerCase().includes(ql);}).slice(0,8);
+      if(!hits.length){drop.innerHTML='<div class="ns-empty">No results</div>';drop.style.display='block';return;}
+      drop.innerHTML=hits.map(function(a,i){
+        var ht=a.t.replace(new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<mark class="ns-hl">$1</mark>');
+        return '<a href="/articles/'+a.s+'" data-i="'+i+'">'+ht+'</a>';
+      }).join('');
+      drop.style.display='block';idx=-1;
+    }
+    tog.addEventListener('click',function(e){e.stopPropagation();box.classList.contains('open')?close():open();});
+    cls.addEventListener('click',close);
+    inp.addEventListener('input',function(){show(this.value.trim());});
+    inp.addEventListener('keydown',function(e){
+      var items=drop.querySelectorAll('a');
+      if(e.key==='ArrowDown'){e.preventDefault();idx=Math.min(idx+1,items.length-1);}
+      else if(e.key==='ArrowUp'){e.preventDefault();idx=Math.max(idx-1,-1);}
+      else if(e.key==='Enter'&&idx>=0){e.preventDefault();items[idx].click();return;}
+      else if(e.key==='Escape'){close();return;}
+      items.forEach(function(el,i){el.classList.toggle('nav-search-active',i===idx);});
+    });
+    document.addEventListener('click',function(e){if(!wrap.contains(e.target))close();});
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
 </body>
 </html>
