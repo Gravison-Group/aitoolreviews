@@ -1,60 +1,191 @@
-/* Light Presentation Refinement - Consistency improvements only */
-/* Do NOT redesign - only fix minor visual inconsistencies */
+/* AIToolReviews — Comprehensive Visual Fixes v2 */
+/* Fixes: sticky TOC, FAQ class mismatch, content width, sidebar, readability, tables, footer, TOC */
 
-/* ===== IMPROVED SPACING CONSISTENCY ===== */
-
-/* More consistent vertical rhythm */
-.article-body > * {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+:root {
+  --content-width: 780px;        /* reading column */
+  --toc-bg: #ffffff;
+  --toc-border: #e9ecef;
+  --toc-accent: #2d6a4f;
 }
 
-.article-body > * + h2 {
-  margin-top: 2.5rem;
+/* ===== WIDER CONTENT + SIDEBAR LAYOUT ===== */
+.article-wrapper {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 780px) 260px;
+  justify-content: center;
+  gap: 40px;
+  padding: 48px 24px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.article-body > * + h3 {
+@media (max-width: 1200px) {
+  .article-wrapper {
+    grid-template-columns: minmax(0, 780px) 220px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .article-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px 16px 60px;
+    gap: 0;
+  }
+  
+  .review-sidebar {
+    display: none;
+  }
+}
+
+/* ===== STICKY TABLE OF CONTENTS (LEFT SIDEBAR) ===== */
+.article-toc {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding: 0;
+}
+
+.article-toc-inner {
+  background: var(--bg-alt, #ffffff);
+  border: 1px solid var(--border, #e9ecef);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.article-toc-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light, #6c757d);
+  margin-bottom: 0.75rem;
+}
+
+.article-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-toc-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.article-toc-list a {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-light, #6c757d);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.15s;
+  border-left: 2px solid transparent;
+}
+
+.article-toc-list a:hover {
+  color: var(--accent, #2d6a4f);
+  background: rgba(45, 106, 79, 0.05);
+  border-left-color: var(--accent, #2d6a4f);
+}
+
+.article-toc-list a.active {
+  color: var(--accent, #2d6a4f);
+  background: rgba(45, 106, 79, 0.08);
+  border-left-color: var(--accent, #2d6a4f);
+  font-weight: 600;
+}
+
+/* Hide TOC on non-article pages / narrow screens */
+@media (max-width: 960px) {
+  .article-toc {
+    display: none;
+  }
+}
+
+/* If article-wrapper isn't used (fallback for old pages) */
+.article-body {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+@media (min-width: 1200px) {
+  .article-body {
+    padding: 48px 40px 80px;
+  }
+}
+
+/* ===== READABILITY — ARTICLE CONTENT TEXT ===== */
+article.article-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+article.article-content p {
+  margin-bottom: 1.25em;
+  max-width: 70ch;
+}
+
+article.article-content h2 {
   margin-top: 2rem;
 }
 
-.article-body > * + h4 {
+article.article-content h3 {
   margin-top: 1.5rem;
 }
 
-/* Consistent paragraph spacing */
-.article-body p {
-  margin-bottom: 1.5rem;
-  line-height: 1.75;
-}
+/* ===== FIX FAQ CLASS MISMATCH ===== */
+/* HTML uses .faq-item__q and .faq-item__a, CSS targets .faq-item h3 / .faq-item p */
 
-/* Consistent list spacing */
-.article-body ul,
-.article-body ol {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-.article-body li {
+.faq-item__q {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading, #1a1a2e);
   margin-bottom: 0.5rem;
-  line-height: 1.6;
+  display: block;
 }
 
-.article-body li:last-child {
-  margin-bottom: 0;
+.faq-item__a {
+  color: var(--text-light, #6c757d);
+  line-height: 1.7;
+  margin-top: 0.5rem;
 }
 
-/* ===== IMPROVED TABLE STYLING ===== */
+/* Keep existing .faq selectors working too */
+.faq-item strong.faq-item__q { /* override bold */
+  font-weight: 600;
+}
 
+/* ===== STICKY HEADER SCROLL ANCHOR FIX ===== */
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  scroll-margin-top: 80px;
+}
+
+/* ===== IMPROVED NAVIGATION ===== */
+.nav-logo {
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.nav-links { gap: 24px; }
+
+/* ===== IMPROVED TABLE CONSISTENCY ===== */
 .article-body table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   margin: 2rem 0;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .article-body th {
@@ -62,15 +193,15 @@
   color: var(--heading);
   font-weight: 700;
   text-align: left;
-  padding: 1rem 1.25rem;
+  padding: 0.9rem 1.1rem;
   border-bottom: 2px solid var(--accent);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .article-body td {
-  padding: 1rem 1.25rem;
+  padding: 0.85rem 1.1rem;
   border-bottom: 1px solid var(--border);
   color: var(--text);
   vertical-align: top;
@@ -80,285 +211,475 @@
   border-bottom: none;
 }
 
-.article-body tr:hover {
-  background: rgba(0, 0, 0, 0.02);
+.article-body tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.015);
 }
 
-/* Zebra striping for better readability */
-.article-body tbody tr:nth-child(even) {
-  background: rgba(0, 0, 0, 0.01);
+/* ===== FOOTER CONSISTENCY ===== */
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.article-body tbody tr:nth-child(even):hover {
-  background: rgba(0, 0, 0, 0.03);
+.also-compare {
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
-/* ===== IMPROVED COMPARISON SECTIONS ===== */
+.also-compare h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--heading);
+}
 
-/* Comparison blocks */
-.comparison-block {
+.also-compare-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.also-compare-links a {
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  background: var(--accent-pale);
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.also-compare-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ===== BETTER SECTION HEADERS ===== */
+.section-header {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+/* ===== EXPLORE MORE FIX ===== */
+.explore-more {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.explore-more h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--heading);
+}
+
+.explore-more-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.explore-more-links a {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+/* ===== REPAIR STICKY HEADER ON SMALL SCREENS ===== */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ===== FIX MOBILE TOC LINE BREAKING ===== */
+@media (max-width: 960px) {
+  .table-of-contents p {
+    white-space: normal !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* ===== FIX CONTENT WIDTH FOR INDEX/HOMEPAGE ===== */
+.article-wrapper-index {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* ===== TABLE OF CONTENTS — CLEAN STYLING (LIGHT) ===== */
+.table-of-contents {
+  background: var(--bg-alt, #ffffff) !important;
+  border: 1px solid var(--border, #e9ecef) !important;
+  border-radius: 10px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 0 0 2rem 0 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: static;
+  z-index: auto;
+}
+
+.table-of-contents strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--heading, #1a1a2e);
+}
+
+.table-of-contents ol {
+  margin: 0;
+  padding-left: 1.4rem;
+  line-height: 1.8;
+  list-style: decimal;
+}
+
+.table-of-contents ol li {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.table-of-contents a {
+  color: var(--accent, #2d6a4f);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: all 0.15s;
+  display: inline-block;
+  padding: 0.15rem 0;
+}
+
+.table-of-contents a:hover {
+  color: var(--accent-hov, #1b4332);
+  border-bottom: 1px solid var(--accent, #2d6a4f);
+}
+
+/* Mobile TOC - wrap long lines */
+@media (max-width: 960px) {
+  .table-of-contents ol {
+    white-space: normal;
+    line-height: 1.7;
+  }
+}
+
+/* ===== REVIEW SIDEBAR — MISSING CSS (was completely unstyled) ===== */
+
+/* Review layout — sidebar + content grid */
+.review-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2.5rem;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+@media (max-width: 960px) {
+  .review-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Review sidebar */
+.review-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 960px) {
+  .review-sidebar {
+    position: static;
+  }
+}
+
+.sidebar-card {
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-}
-
-.comparison-block h3 {
-  margin-top: 0;
-  color: var(--heading);
-  font-size: 1.2rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.5rem;
+  padding: 1.25rem;
   margin-bottom: 1rem;
 }
 
-/* Pros/Cons grids */
-.pros-cons-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-@media (max-width: 768px) {
-  .pros-cons-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
-
-.pros-box {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-  border: 1px solid #bbf7d0;
-  border-radius: 8px;
-  padding: 1.25rem;
-}
-
-.cons-box {
-  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-  border: 1px solid #fed7aa;
-  border-radius: 8px;
-  padding: 1.25rem;
-}
-
-.pros-box h4,
-.cons-box h4 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
+.sidebar-card__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+/* Score */
+.sidebar-score {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.sidebar-score__value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--heading);
+  line-height: 1;
+}
+
+.sidebar-score__stars {
+  font-size: 1.2rem;
+  color: #f59e0b;
+  margin: 0.35rem 0;
+  letter-spacing: 2px;
+}
+
+.sidebar-score__label {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* Score bars */
+.score-bars {
+  margin-top: 0.75rem;
+}
+
+.score-bar {
+  margin-bottom: 0.5rem;
+}
+
+.score-bar__top {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
-.pros-box h4 {
-  color: #15803d;
+.score-bar__label {
+  color: var(--text-light);
 }
 
-.pros-box h4:before {
-  content: "✓";
-  font-weight: bold;
-}
-
-.cons-box h4 {
-  color: #c2410c;
-}
-
-.cons-box h4:before {
-  content: "✗";
-  font-weight: bold;
-}
-
-/* Feature comparison tables */
-.feature-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-
-.feature-table th {
-  background: var(--accent-pale);
+.score-bar__value {
   color: var(--heading);
   font-weight: 600;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  text-align: left;
 }
 
-.feature-table td {
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  color: var(--text);
+.score-bar__track {
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.feature-table .feature-check {
-  color: #15803d;
-  font-weight: bold;
-}
-
-.feature-table .feature-missing {
-  color: #c2410c;
-  opacity: 0.7;
-}
-
-/* ===== IMPROVED CALLTOUTS & HIGHLIGHTS ===== */
-
-.callout {
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  border: 1px solid #bfdbfe;
-  border-left: 4px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 1.5rem;
-  margin: 2rem 0;
-}
-
-.callout h4 {
-  margin-top: 0;
-  color: var(--heading);
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.callout h4:before {
-  content: "💡";
-}
-
-.callout--warning {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  border-color: #fcd34d;
-  border-left-color: #f59e0b;
-}
-
-.callout--warning h4:before {
-  content: "⚠️";
-}
-
-.callout--success {
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-  border-color: #a7f3d0;
-  border-left-color: #10b981;
-}
-
-.callout--success h4:before {
-  content: "✅";
-}
-
-/* ===== IMPROVED TOOL/BENEFIT BLOCKS ===== */
-
-.tool-benefit {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  align-items: start;
-  padding: 1.25rem;
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin: 1rem 0;
-}
-
-.tool-benefit-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+.score-bar__fill {
+  height: 100%;
   background: var(--accent);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+  border-radius: 3px;
 }
 
-.tool-benefit-content h4 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: var(--heading);
+/* TOC in sidebar */
+.sidebar-card.toc {
+  background: var(--bg-alt);
 }
 
-.tool-benefit-content p {
-  margin-bottom: 0;
+.toc__title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--text-light);
-  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
 
-/* ===== IMPROVED MOBILE CONSISTENCY ===== */
-
-@media (max-width: 768px) {
-  /* Better mobile spacing */
-  .article-body {
-    padding: 1.5rem 1rem;
-  }
-  
-  .article-body h2 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .article-body h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  /* Better table readability on mobile */
-  .article-body table {
-    font-size: 0.9rem;
-  }
-  
-  .article-body th,
-  .article-body td {
-    padding: 0.75rem 0.5rem;
-  }
-  
-  /* Stack comparison grids on mobile */
-  .pros-cons-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  /* Adjust tool benefit blocks */
-  .tool-benefit {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
-  .tool-benefit-icon {
-    margin: 0 auto;
-  }
+.toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
-/* ===== IMPROVED LINK STYLING ===== */
-
-.article-body a {
+.toc__list a {
+  font-size: 0.82rem;
   color: var(--accent);
   text-decoration: none;
+  padding: 0.2rem 0;
   border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
-  padding: 0.1rem 0.2rem;
-  border-radius: 2px;
+  transition: all 0.15s;
 }
 
-.article-body a:hover {
+.toc__list a:hover {
   color: var(--accent-hov);
   border-bottom-color: var(--accent);
-  background: rgba(45, 106, 79, 0.05);
 }
 
-/* Internal link styling */
-.article-body a[href^="/articles/"] {
+/* Quick Facts grid */
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 0.3rem 0;
+}
+
+.fact-label {
+  color: var(--text-light);
+}
+
+.fact-value {
+  color: var(--heading);
   font-weight: 600;
 }
 
-/* External link indicator */
-.article-body a[href^="http"]:not([href*="aitoolreviews.co"]):after {
-  content: " ↗";
-  font-size: 0.8em;
-  opacity: 0.7;
+.text-success {
+  color: var(--accent) !important;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn--outline:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn--sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* ===== ARTICLE SIDEBAR (for article pages) ===== */
+
+aside.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  aside.sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar-box {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-box h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-box li {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.sidebar-box a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.sidebar-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ARTICLE + SIDEBAR FLEX LAYOUT ===== */
+/* When article-body contains both article-content and sidebar */
+
+.article-body:has(aside.sidebar) {
+  max-width: 1100px;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.article-body:has(aside.sidebar) > article.article-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 760px;
+}
+
+@media (max-width: 960px) {
+  .article-body:has(aside.sidebar) {
+    flex-direction: column;
+    max-width: 780px;
+  }
+  
+  .article-body:has(aside.sidebar) > article.article-content {
+    max-width: 100%;
+  }
+}
+
+/* ===== ALSO COMPARE BUTTONS ===== */
+.sidebar-card[style*="center"] .btn--outline.btn--sm {
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== MESSY FOOTER FIX ===== */
+/* related-sites section inside footer but outside container needs fixed width */
+section.related-sites {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 24px 0;
+  text-align: center;
+}
+
+section.related-sites p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+section.related-sites ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.related-sites a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+section.related-sites a:hover {
+  text-decoration: underline;
 }

@@ -32,3 +32,50 @@ document.querySelectorAll('.nav__links a').forEach(link => {
   const linkPath = new URL(link.href, window.location).pathname.replace(/\/$/, '') || '/';
   if (linkPath === currentPath) link.classList.add('active');
 });
+
+// ===== Scroll-Spy: Sticky TOC Active Link Highlighting =====
+(function() {
+  const tocLinks = document.querySelectorAll('.article-toc-list a');
+  if (!tocLinks.length) return;
+
+  const headings = [];
+  tocLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const heading = document.getElementById(href.slice(1));
+      if (heading) headings.push({ link, heading });
+    }
+  });
+
+  if (!headings.length) return;
+
+  function updateActiveToc() {
+    const scrollY = window.scrollY;
+    let current = headings[0];
+
+    for (const item of headings) {
+      const top = item.heading.getBoundingClientRect().top + window.scrollY;
+      if (scrollY >= top - 120) {
+        current = item;
+      }
+    }
+
+    tocLinks.forEach(link => link.classList.remove('active'));
+    current.link.classList.add('active');
+  }
+
+  // Set initial active state
+  updateActiveToc();
+
+  // Throttled scroll listener
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateActiveToc();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();

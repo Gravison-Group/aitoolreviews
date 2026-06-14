@@ -51,6 +51,7 @@ nav {
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
 }
+.table-of-contents { position: static; z-index: auto; background: rgba(128,128,128,0.08); backdrop-filter: none; border-bottom: none; }
 
 .nav-inner {
   display: flex;
